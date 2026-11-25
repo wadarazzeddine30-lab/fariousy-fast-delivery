@@ -1,0 +1,282 @@
+name: Build Android APK
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Setup Java 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Install dependencies
+        run: |
+          npm install --legacy-peer-deps
+
+      - name: Build web app (dist)
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL || 'https://vplhnaqjdpicfsogjihk.supabase.co' }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZwbGhuYXFqZHBpY2Zzb2dqaWhrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMyOTM3MjUsImV4cCI6MjEwODg2OTcyNX0.o_B7QrKVABR_S8f01B_VDEr_omgyajdXYDhQNIuSu3s' }}
+        run: |
+          cat << EOF > .env
+          VITE_SUPABASE_URL=${VITE_SUPABASE_URL}
+          VITE_SUPABASE_ANON_KEY=${VITE_SUPABASE_ANON_KEY}
+          EOF
+          npm run build
+          # Remove only heavy unused chat screenshots/videos/PDFs and legacy Workbox SW files — ALWAYS keep company logo assets
+          find dist/assets/aistudio -type f \( -name 'Screenshot_*' -o -name 'SVID_*' -o -name 'ticket*.pdf' -o -name 'image_*.png' \) -delete 2>/dev/null || true
+          rm -f dist/workbox-*.js dist/registerSW.js
+          cat << 'SWEOF' > dist/sw.js
+          // Self-destructing SW for Capacitor Android APK: removes legacy cached Workbox SW cleanly
+          self.addEventListener('install', function () {
+            self.skipWaiting();
+          });
+          self.addEventListener('activate', function (event) {
+            event.waitUntil(
+              caches.keys().then(function (keys) {
+                return Promise.all(keys.map(function (k) { return caches.delete(k); }));
+              }).then(function () {
+                return self.registration.unregister();
+              }).then(function () {
+                return self.clients.matchAll({ type: 'window' });
+              }).then(function (clients) {
+                clients.forEach(function (client) {
+                  if (client && typeof client.navigate === 'function') {
+                    client.navigate(client.url);
+                  }
+                });
+              })
+            );
+          });
+          SWEOF
+          # Verify web dist output and company logo exist
+          test -s dist/index.html || (echo "ERROR: dist/index.html missing!" && exit 1)
+          test -s dist/fariousy-logo.jpeg || (echo "ERROR: dist/fariousy-logo.jpeg missing!" && exit 1)
+          ls -la dist/ dist/assets/
+
+      - name: Setup Capacitor Android & Generate App Resources
+        run: |
+          rm -rf android capacitor.config.*
+          npm install @capacitor/core @capacitor/cli @capacitor/android @capacitor/assets --legacy-peer-deps
+          cat << 'CAPEOF' > capacitor.config.json
+          {
+            "appId": "com.fariousy.delivery",
+            "appName": "Fariousy Delivery",
+            "webDir": "dist",
+            "server": {
+              "androidScheme": "https"
+            },
+            "android": {
+              "adjustMarginsForEdgeToEdge": "force"
+            }
+          }
+          CAPEOF
+          npx cap add android
+          if [ -f "logo.png" ]; then
+            mkdir -p resources
+            cp logo.png resources/icon.png
+            cp logo.png resources/splash.png
+            npx capacitor-assets generate --android
+          elif [ -f "public/pwa-512x512.png" ]; then
+            mkdir -p resources
+            cp public/pwa-512x512.png resources/icon.png
+            cp public/pwa-512x512.png resources/splash.png
+            npx capacitor-assets generate --android
+          fi
+
+      - name: Enable Native Android Camera Permissions & WebView Bridge
+        run: |
+          MANIFEST="android/app/src/main/AndroidManifest.xml"
+          python3 - << 'PYEOF'
+          from pathlib import Path
+          manifest_path = Path("android/app/src/main/AndroidManifest.xml")
+          content = manifest_path.read_text(encoding="utf-8")
+          camera_block = """    <uses-permission android:name="android.permission.CAMERA" />
+              <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+              <uses-feature android:name="android.hardware.camera" android:required="false" />
+              <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+          """
+          if "android.permission.CAMERA" not in content:
+              content = content.replace("<application", camera_block + "\n    <application", 1)
+              manifest_path.write_text(content, encoding="utf-8")
+          PYEOF
+          grep -q "android.permission.CAMERA" "${MANIFEST}" || (echo "ERROR: CAMERA permission missing from AndroidManifest.xml!" && exit 1)
+
+          MAIN_ACTIVITY="android/app/src/main/java/com/fariousy/delivery/MainActivity.java"
+          mkdir -p "$(dirname "${MAIN_ACTIVITY}")"
+          cat << 'JAVAEOF' > "${MAIN_ACTIVITY}"
+          package com.fariousy.delivery;
+
+          import android.Manifest;
+          import android.content.pm.PackageManager;
+          import android.os.Bundle;
+          import android.webkit.PermissionRequest;
+          import android.webkit.WebSettings;
+          import android.webkit.WebView;
+          import androidx.annotation.NonNull;
+          import androidx.core.app.ActivityCompat;
+          import androidx.core.content.ContextCompat;
+          import com.getcapacitor.BridgeActivity;
+          import com.getcapacitor.BridgeWebChromeClient;
+          import java.util.ArrayList;
+          import java.util.List;
+
+          public class MainActivity extends BridgeActivity {
+              private static final int CAMERA_PERMISSION_REQUEST_CODE = 9001;
+              private PermissionRequest pendingWebPermissionRequest = null;
+              private boolean cameraClientAttached = false;
+
+              @Override
+              public void onStart() {
+                  super.onStart();
+                  attachCameraWebChromeClient();
+              }
+
+              private void attachCameraWebChromeClient() {
+                  if (cameraClientAttached) return;
+                  WebView webView = getBridge() != null ? getBridge().getWebView() : null;
+                  if (webView == null) return;
+                  cameraClientAttached = true;
+
+                  WebSettings settings = webView.getSettings();
+                  settings.setMediaPlaybackRequiresUserGesture(false);
+
+                  webView.setWebChromeClient(new BridgeWebChromeClient(getBridge()) {
+                      @Override
+                      public void onPermissionRequest(final PermissionRequest request) {
+                          if (request == null) return;
+                          final String[] resources = request.getResources();
+                          List<String> neededPerms = new ArrayList<>();
+
+                          if (resources != null) {
+                              for (String res : resources) {
+                                  if (PermissionRequest.RESOURCE_VIDEO_CAPTURE.equals(res)) {
+                                      if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CAMERA)
+                                              != PackageManager.PERMISSION_GRANTED) {
+                                          neededPerms.add(Manifest.permission.CAMERA);
+                                      }
+                                  } else if (PermissionRequest.RESOURCE_AUDIO_CAPTURE.equals(res)) {
+                                      if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.RECORD_AUDIO)
+                                              != PackageManager.PERMISSION_GRANTED) {
+                                          neededPerms.add(Manifest.permission.RECORD_AUDIO);
+                                      }
+                                  }
+                              }
+                          }
+
+                          if (neededPerms.isEmpty()) {
+                              runOnUiThread(() -> {
+                                  try {
+                                      request.grant(request.getResources());
+                                  } catch (Exception ignored) {}
+                              });
+                          } else {
+                              if (pendingWebPermissionRequest != null) {
+                                  try {
+                                      pendingWebPermissionRequest.deny();
+                                  } catch (Exception ignored) {}
+                              }
+                              pendingWebPermissionRequest = request;
+                              ActivityCompat.requestPermissions(
+                                  MainActivity.this,
+                                  neededPerms.toArray(new String[0]),
+                                  CAMERA_PERMISSION_REQUEST_CODE
+                              );
+                          }
+                      }
+
+                      @Override
+                      public void onPermissionRequestCanceled(PermissionRequest request) {
+                          if (pendingWebPermissionRequest == request) {
+                              pendingWebPermissionRequest = null;
+                          }
+                          super.onPermissionRequestCanceled(request);
+                      }
+                  });
+              }
+
+              @Override
+              public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+                  super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+                  if (requestCode == CAMERA_PERMISSION_REQUEST_CODE && pendingWebPermissionRequest != null) {
+                      final PermissionRequest req = pendingWebPermissionRequest;
+                      pendingWebPermissionRequest = null;
+
+                      boolean cameraGranted = ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
+                              == PackageManager.PERMISSION_GRANTED;
+
+                      runOnUiThread(() -> {
+                          try {
+                              if (cameraGranted) {
+                                  req.grant(req.getResources());
+                              } else {
+                                  req.deny();
+                              }
+                          } catch (Exception ignored) {}
+                      });
+                  }
+              }
+          }
+          JAVAEOF
+
+      - name: Sync Web Bundle into Android Assets
+        run: |
+          npx cap sync android
+          # Guarantee full built dist/ assets are present inside Android assets/public
+          mkdir -p android/app/src/main/assets/public
+          cp -r dist/. android/app/src/main/assets/public/
+          # Fail fast if web bundle or company logo was not copied into Android assets/public
+          test -s android/app/src/main/assets/public/index.html || (echo "ERROR: index.html missing in android/app/src/main/assets/public!" && exit 1)
+          test -s android/app/src/main/assets/public/fariousy-logo.jpeg || (echo "ERROR: fariousy-logo.jpeg missing in android/app/src/main/assets/public!" && exit 1)
+          JS_COUNT=$(find android/app/src/main/assets/public -type f -name '*.js' | wc -l)
+          echo "Bundled JS files in android/app/src/main/assets/public: ${JS_COUNT}"
+          test "${JS_COUNT}" -gt 0 || (echo "ERROR: No JS bundle files found in android/app/src/main/assets/public!" && exit 1)
+          ls -la android/app/src/main/assets/public/
+
+      - name: Fix Kotlin Duplicate Classes
+        run: |
+          cat << 'EOF' >> android/app/build.gradle
+
+          configurations.all {
+              resolutionStrategy {
+                  force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.22'
+                  force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22'
+                  force 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22'
+              }
+          }
+          EOF
+
+      - name: Build Android Debug APK
+        run: |
+          cd android
+          chmod +x gradlew
+          ./gradlew assembleDebug
+
+      - name: Verify APK Contains Bundled Web Assets
+        run: |
+          APK_PATH="android/app/build/outputs/apk/debug/app-debug.apk"
+          test -s "${APK_PATH}" || (echo "ERROR: APK not generated!" && exit 1)
+          unzip -l "${APK_PATH}" | grep -q "assets/public/index.html" || (echo "ERROR: APK is missing assets/public/index.html!" && exit 1)
+          unzip -l "${APK_PATH}" | grep -q "assets/public/fariousy-logo.jpeg" || (echo "ERROR: APK is missing assets/public/fariousy-logo.jpeg!" && exit 1)
+          unzip -l "${APK_PATH}" | grep -q "assets/public/assets/.*\.js" || (echo "ERROR: APK is missing bundled JS assets!" && exit 1)
+          echo "Verified APK web bundle contents:"
+          unzip -l "${APK_PATH}" | grep "assets/public/" | head -n 30
+
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: fariousy-delivery-apk
+          path: android/app/build/outputs/apk/debug/app-debug.apk

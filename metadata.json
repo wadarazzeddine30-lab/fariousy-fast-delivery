@@ -1,0 +1,10 @@
+{
+  "name": "Remix FARIOUSY DELIVERY",
+  "description": "Plateforme professionnelle de gestion de livraison de colis, logistique, ramassage, suivi en temps réel et gestion financière.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,3296 @@
+{
+  "users": [
+    {
+      "id": "7b90506e-0714-41bb-8186-8d6d4d6a31f8",
+      "name": "Administrateur Fariousy",
+      "email": "wadarazzeddine30@gmail.com",
+      "phone": "",
+      "role": "super_admin",
+      "companyName": "FARIOUSY DELIVERY SARL",
+      "city": "Laâyoune",
+      "address": "",
+      "status": "active",
+      "accountStatus": "approuve",
+      "registeredAt": "2026-10-31T21:56:43.408418+00:00",
+      "passwordHash": "scrypt$cdd7cb6dc00f07d0139e43134acf55e0$abe1c2ffd3151475c9c130f7d22c03665ebed8985249f84e661ad260972de70b610233c72a701a594e4797f4f750c72623864e10449662bf9c060e602c6c2957"
+    }
+  ],
+  "shops": [],
+  "packages": [
+    {
+      "id": "pkg-1795438418514-tdci",
+      "trackingNumber": "FAR-11438180",
+      "shopId": "5c6d98c5-060b-4d27-a055-4ab5e832c922",
+      "clientId": "a6a1b86c-ddd9-45c4-99d3-6b5345d9a03d",
+      "clientName": "elkantaoui sidiaamar",
+      "clientCompany": "elkantaoui sidiaamar",
+      "clientPhone": "0618894610",
+      "recipientName": "سعدة",
+      "recipientPhone": "0718477277",
+      "city": "Guelmim",
+      "address": "حي الفيلا",
+      "description": "ملحفة",
+      "notes": "خالصة",
+      "codAmount": 30,
+      "productPrice": 0,
+      "deliveryFee": 30,
+      "status": "attente_ramassage",
+      "currentAgency": "Agence Principale",
+      "isPaidToClient": false,
+      "allowOpen": true,
+      "allowTry": false,
+      "isFragile": false,
+      "isExchange": false,
+      "createdAt": "2026-11-23T12:53:38.514Z",
+      "lastMovedAt": "2026-11-23T12:56:03.953Z",
+      "history": [
+        {
+          "id": "hist-recovered-FAR-11438180",
+          "status": "attente_ramassage",
+          "statusLabel": "Nouveau colis créé",
+          "updatedBy": "FARIOUSY Logistics",
+          "role": "admin",
+          "timestamp": "2026-11-23T12:53:38.514Z",
+          "location": "Guelmim",
+          "comment": "Colis importé depuis Excel et enregistré dans le système FARIOUSY DELIVERY"
+        }
+      ]
+    },
+    {
+      "id": "pkg-1795438417846-4roa",
+      "trackingNumber": "FAR-14943455",
+      "shopId": "5c6d98c5-060b-4d27-a055-4ab5e832c922",
+      "clientId": "a6a1b86c-ddd9-45c4-99d3-6b5345d9a03d",
+      "clientName": "elkantaoui sidiaamar",
+      "clientCompany": "elkantaoui sidiaamar",
+      "clientPhone": "0618894610",
+      "recipientName": "علية",
+      "recipientPhone": "0696385168",
+      "city": "Guelmim",
+      "address": "تيرت عند مدرسة سمش العلوم",
+      "description": "ملاحف",
+      "notes": "خالصة",
+      "codAmount": 30,
+      "productPrice": 0,
+      "deliveryFee": 30,
+      "status": "attente_ramassage",
+      "currentAgency": "Agence Principale",
+      "isPaidToClient": false,
+      "allowOpen": true,
+      "allowTry": false,
+      "isFragile": false,
+      "isExchange": false,
+      "createdAt": "2026-11-23T12:53:37.846Z",
+      "lastMovedAt": "2026-11-23T12:55:10.911Z",
+      "history": [
+        {
+          "id": "hist-recovered-FAR-14943455",
+          "status": "attente_ramassage",
+          "statusLabel": "Nouveau colis créé",
+          "updatedBy": "FARIOUSY Logistics",
+          "role": "admin",
+          "timestamp": "2026-11-23T12:53:37.846Z",
+          "location": "Guelmim",
+          "comment": "Colis importé depuis Excel et enregistré dans le système FARIOUSY DELIVERY"
+        }
+      ]
+    },
+    {
+      "id": "pkg-1795438417444-r8ae",
+      "trackingNumber": "FAR-20624057",
+      "shopId": "5c6d98c5-060b-4d27-a055-4ab5e832c922",
+      "clientId": "a6a1b86c-ddd9-45c4-99d3-6b5345d9a03d",
+      "clientName": "elkantaoui sidiaamar",
+      "clientCompany": "elkantaoui sidiaamar",
+      "clientPhone": "0618894610",
+      "recipientName": "شيماء",
+      "recipientPhone": "0654653758",
+      "city": "Guelmim",
+      "address": "حي القصبة",
+      "description": "ملاحف",
+      "notes": "السلعة خالصة",
+      "codAmount": 30,
+      "productPrice": 0,
+      "deliveryFee": 30,
+      "status": "attente_ramassage",
+      "currentAgency": "Agence Principale",
+      "isPaidToClient": false,
+      "allowOpen": true,
+      "allowTry": false,
+      "isFragile": false,
+      "isExchange": false,
+      "createdAt": "2026-11-23T12:53:37.444Z",
+      "lastMovedAt": "2026-11-23T12:56:40.574Z",
+      "history": [
+        {
+          "id": "hist-recovered-FAR-20624057",
+          "status": "attente_ramassage",
+          "statusLabel": "Nouveau colis créé",
+          "updatedBy": "FARIOUSY Logistics",
+          "role": "admin",
+          "timestamp": "2026-11-23T12:53:37.444Z",
+          "location": "Guelmim",
+          "comment": "Colis importé depuis Excel et enregistré dans le système FARIOUSY DELIVERY"
+        }
+      ]
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log-1795007156958",
+      "action": "LOGIN_LOCKOUT",
+      "entity": "auth",
+      "entityId": "attacker-probe@test.local",
+      "details": {
+        "failures": 8,
+        "ip": "127.0.0.1",
+        "message": "Blocage temporaire après 8 tentatives échouées (IP: 127.0.0.1)"
+      },
+      "author": {
+        "id": "security-guard",
+        "name": "Protection Brute-Force",
+        "role": "admin"
+      },
+      "timestamp": "2026-11-18T13:05:56.958Z"
+    }
+  ],
+  "problemReports": {},
+  "packageOptions": {
+    "far-240535": {
+      "allowOpen": false,
+      "allowTry": false,
+      "isFragile": false,
+      "isExchange": false,
+      "updatedAt": "2026-11-16T21:09:27.741Z"
+    },
+    "far-11438180": {
+      "allowTry": false,
+      "allowOpen": true,
+      "isFragile": false,
+      "updatedAt": "2026-11-23T12:56:03.954Z",
+      "isExchange": false
+    },
+    "far-14943455": {
+      "allowTry": false,
+      "allowOpen": true,
+      "isFragile": false,
+      "updatedAt": "2026-11-23T12:55:10.912Z",
+      "isExchange": false
+    },
+    "far-20624057": {
+      "allowTry": false,
+      "allowOpen": true,
+      "isFragile": false,
+      "updatedAt": "2026-11-23T12:56:40.575Z",
+      "isExchange": false
+    },
+    "pkg-1795438417444-r8ae": {
+      "allowTry": false,
+      "allowOpen": true,
+      "isFragile": false,
+      "updatedAt": "2026-11-23T12:56:40.575Z",
+      "isExchange": false
+    },
+    "pkg-1795438417846-4roa": {
+      "allowTry": false,
+      "allowOpen": true,
+      "isFragile": false,
+      "updatedAt": "2026-11-23T12:55:10.912Z",
+      "isExchange": false
+    },
+    "pkg-1795438418514-tdci": {
+      "allowTry": false,
+      "allowOpen": true,
+      "isFragile": false,
+      "updatedAt": "2026-11-23T12:56:03.954Z",
+      "isExchange": false
+    },
+    "77be78e8-af27-462a-a6b2-38f6c86f84ad": {
+      "allowOpen": false,
+      "allowTry": false,
+      "isFragile": false,
+      "isExchange": false,
+      "updatedAt": "2026-11-16T21:09:27.741Z"
+    }
+  },
+  "packageOverrides": {
+    "far-758674": {
+      "lastMovedAt": "2026-11-23T12:46:17.433Z",
+      "isPaidToClient": true,
+      "clientPaymentId": "pay-1795434364537"
+    },
+    "far-854877": {
+      "status": "ramasse",
+      "history": [
+        {
+          "id": "hist-1795201143053",
+          "role": "admin",
+          "status": "livre",
+          "comment": "Statut modifié par Administrateur Fariousy depuis la table",
+          "location": "Agence Principale",
+          "timestamp": "2026-11-20T18:59:02.964Z",
+          "updatedBy": "Administration FARIOUSY",
+          "statusLabel": "Statut : livre"
+        },
+        {
+          "id": "hist-1795436516900",
+          "status": "ramasse",
+          "statusLabel": "Statut : ramasse",
+          "updatedBy": "Administration FARIOUSY",
+          "role": "admin",
+          "timestamp": "2026-11-23T12:21:56.792Z",
+          "location": "Agence Principale",
+          "comment": "Statut modifié par Administrateur Fariousy depuis la table"
+        },
+        {
+          "id": "hist-1795436913405",
+          "status": "reporte",
+          "statusLabel": "Statut : reporte",
+          "updatedBy": "Administration FARIOUSY",
+          "role": "admin",
+          "timestamp": "2026-11-23T12:28:33.294Z",
+          "location": "Laayoune",
+          "comment": "Reporté au 2026-11-25."
+        },
+        {
+          "id": "hist-1795437021571",
+          "status": "ramasse",
+          "statusLabel": "Statut : ramasse",
+          "updatedBy": "Administration FARIOUSY",
+          "role": "admin",
+          "timestamp": "2026-11-23T12:30:21.405Z",
+          "location": "Agence Principale",
+          "comment": "Statut modifié par Administrateur Fariousy depuis la table"
+        }
+      ],
+      "lastMovedAt": "2026-11-23T12:30:21.405+00:00",
+      "driverComment": "Statut modifié par Administrateur Fariousy depuis la table",
+      "driverId": "8880edda-d51e-4413-8016-22ce0e2eed9a",
+      "driverName": "azzeddine ait ouadar",
+      "driverPhone": "0604060647"
+    },
+    "far-11438180": {
+      "city": "Guelmim",
+      "notes": "خالصة",
+      "address": "حي الفيلا",
+      "allowTry": false,
+      "allowOpen": true,
+      "codAmount": 30,
+      "isFragile": false,
+      "isExchange": false,
+      "deliveryFee": 30,
+      "description": "ملحفة",
+      "lastMovedAt": "2026-11-23T12:56:03.953Z",
+      "productPrice": 0,
+      "recipientName": "سعدة",
+      "recipientPhone": "0718477277"
+    },
+    "far-14943455": {
+      "city": "Guelmim",
+      "notes": "خالصة",
+      "address": "تيرت عند مدرسة سمش العلوم",
+      "allowTry": false,
+      "allowOpen": true,
+      "codAmount": 30,
+      "isFragile": false,
+      "isExchange": false,
+      "deliveryFee": 30,
+      "description": "ملاحف",
+      "lastMovedAt": "2026-11-23T12:55:10.911Z",
+      "productPrice": 0,
+      "recipientName": "علية",
+      "recipientPhone": "0696385168"
+    },
+    "far-20624057": {
+      "city": "Guelmim",
+      "notes": "السلعة خالصة",
+      "address": "حي القصبة",
+      "allowTry": false,
+      "allowOpen": true,
+      "codAmount": 30,
+      "isFragile": false,
+      "isExchange": false,
+      "deliveryFee": 30,
+      "description": "ملاحف",
+      "lastMovedAt": "2026-11-23T12:56:40.574Z",
+      "productPrice": 0,
+      "recipientName": "شيماء",
+      "recipientPhone": "0654653758"
+    },
+    "pkg-1795438417444-r8ae": {
+      "city": "Guelmim",
+      "notes": "السلعة خالصة",
+      "address": "حي القصبة",
+      "allowTry": false,
+      "allowOpen": true,
+      "codAmount": 30,
+      "isFragile": false,
+      "isExchange": false,
+      "deliveryFee": 30,
+      "description": "ملاحف",
+      "lastMovedAt": "2026-11-23T12:56:40.574Z",
+      "productPrice": 0,
+      "recipientName": "شيماء",
+      "recipientPhone": "0654653758"
+    },
+    "pkg-1795438417846-4roa": {
+      "city": "Guelmim",
+      "notes": "خالصة",
+      "address": "تيرت عند مدرسة سمش العلوم",
+      "allowTry": false,
+      "allowOpen": true,
+      "codAmount": 30,
+      "isFragile": false,
+      "isExchange": false,
+      "deliveryFee": 30,
+      "description": "ملاحف",
+      "lastMovedAt": "2026-11-23T12:55:10.911Z",
+      "productPrice": 0,
+      "recipientName": "علية",
+      "recipientPhone": "0696385168"
+    },
+    "pkg-1795438418514-tdci": {
+      "city": "Guelmim",
+      "notes": "خالصة",
+      "address": "حي الفيلا",
+      "allowTry": false,
+      "allowOpen": true,
+      "codAmount": 30,
+      "isFragile": false,
+      "isExchange": false,
+      "deliveryFee": 30,
+      "description": "ملحفة",
+      "lastMovedAt": "2026-11-23T12:56:03.953Z",
+      "productPrice": 0,
+      "recipientName": "سعدة",
+      "recipientPhone": "0718477277"
+    },
+    "23083f6b-ad6e-4866-ab3e-b44975320248": {
+      "lastMovedAt": "2026-11-23T12:46:17.433Z",
+      "isPaidToClient": true,
+      "clientPaymentId": "pay-1795434364537"
+    },
+    "ad8c005e-b85e-402f-beff-f11e6a7276ea": {
+      "status": "ramasse",
+      "history": [
+        {
+          "id": "hist-1795201143053",
+          "role": "admin",
+          "status": "livre",
+          "comment": "Statut modifié par Administrateur Fariousy depuis la table",
+          "location": "Agence Principale",
+          "timestamp": "2026-11-20T18:59:02.964Z",
+          "updatedBy": "Administration FARIOUSY",
+          "statusLabel": "Statut : livre"
+        },
+        {
+          "id": "hist-1795436516900",
+          "status": "ramasse",
+          "statusLabel": "Statut : ramasse",
+          "updatedBy": "Administration FARIOUSY",
+          "role": "admin",
+          "timestamp": "2026-11-23T12:21:56.792Z",
+          "location": "Agence Principale",
+          "comment": "Statut modifié par Administrateur Fariousy depuis la table"
+        },
+        {
+          "id": "hist-1795436913405",
+          "status": "reporte",
+          "statusLabel": "Statut : reporte",
+          "updatedBy": "Administration FARIOUSY",
+          "role": "admin",
+          "timestamp": "2026-11-23T12:28:33.294Z",
+          "location": "Laayoune",
+          "comment": "Reporté au 2026-11-25."
+        },
+        {
+          "id": "hist-1795437021571",
+          "status": "ramasse",
+          "statusLabel": "Statut : ramasse",
+          "updatedBy": "Administration FARIOUSY",
+          "role": "admin",
+          "timestamp": "2026-11-23T12:30:21.405Z",
+          "location": "Agence Principale",
+          "comment": "Statut modifié par Administrateur Fariousy depuis la table"
+        }
+      ],
+      "lastMovedAt": "2026-11-23T12:30:21.405+00:00",
+      "driverComment": "Statut modifié par Administrateur Fariousy depuis la table",
+      "driverId": "8880edda-d51e-4413-8016-22ce0e2eed9a",
+      "driverName": "azzeddine ait ouadar",
+      "driverPhone": "0604060647"
+    }
+  },
+  "kycDocuments": {},
+  "driverMeta": {},
+  "partnerSecrets": {
+    "part-test-tariffs-1794865346429": {
+      "webhookToken": "wu21T3ON3Khi7yBqdcMVMZxxfeffeyHyysnJauLXOn4=",
+      "updatedAt": "2026-11-16T21:42:26.734Z"
+    }
+  },
+  "userSavedAddresses": {},
+  "reviews": [],
+  "clientStockProducts": [
+    {
+      "id": "stkprod-1795437266115-djsj",
+      "name": "تقاشر شتوية",
+      "units": [
+        {
+          "id": "unit-1795437266115-7yd9-001",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-001",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:34:41.811Z",
+          "scannedBy": "OTHMAN"
+        },
+        {
+          "id": "unit-1795437266115-v5x8-002",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-002",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:34:45.836Z",
+          "scannedBy": "OTHMAN"
+        },
+        {
+          "id": "unit-1795437266115-e5uo-003",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-003",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:34:48.074Z",
+          "scannedBy": "OTHMAN"
+        },
+        {
+          "id": "unit-1795437266115-8w0q-004",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-004",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:34:50.300Z",
+          "scannedBy": "OTHMAN"
+        },
+        {
+          "id": "unit-1795437266115-gav5-005",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-005",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:34:52.147Z",
+          "scannedBy": "OTHMAN"
+        },
+        {
+          "id": "unit-1795437266115-l4af-006",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-006",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:34:55.158Z",
+          "scannedBy": "OTHMAN"
+        },
+        {
+          "id": "unit-1795437266115-u6pc-007",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-007",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:34:57.286Z",
+          "scannedBy": "OTHMAN"
+        },
+        {
+          "id": "unit-1795437266115-1jo9-008",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-008",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:34:59.846Z",
+          "scannedBy": "OTHMAN"
+        },
+        {
+          "id": "unit-1795437266115-ry4d-009",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-009",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:35:02.625Z",
+          "scannedBy": "OTHMAN"
+        },
+        {
+          "id": "unit-1795437266115-fdim-010",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-010",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:35:05.215Z",
+          "scannedBy": "OTHMAN"
+        },
+        {
+          "id": "unit-1795437266115-ujbw-011",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-011",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:35:06.961Z",
+          "scannedBy": "OTHMAN"
+        },
+        {
+          "id": "unit-1795437266115-qll5-012",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-012",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:35:08.763Z",
+          "scannedBy": "OTHMAN"
+        },
+        {
+          "id": "unit-1795437266115-ueqj-013",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-013",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:35:10.799Z",
+          "scannedBy": "OTHMAN"
+        },
+        {
+          "id": "unit-1795437266115-bvrw-014",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-014",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:35:17.607Z",
+          "scannedBy": "OTHMAN"
+        },
+        {
+          "id": "unit-1795437266115-posr-015",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-015",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:35:19.869Z",
+          "scannedBy": "OTHMAN"
+        },
+        {
+          "id": "unit-1795437266115-07nn-016",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-016",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:35:27.547Z",
+          "scannedBy": "OTHMAN"
+        },
+        {
+          "id": "unit-1795437266115-z1ip-017",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-017",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:35:31.951Z",
+          "scannedBy": "OTHMAN"
+        },
+        {
+          "id": "unit-1795437266115-fxjv-018",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-018",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:35:38.766Z",
+          "scannedBy": "OTHMAN"
+        },
+        {
+          "id": "unit-1795437266115-vnjm-019",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-019",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:35:54.449Z",
+          "scannedBy": "OTHMAN"
+        },
+        {
+          "id": "unit-1795437266115-0r0y-020",
+          "bin": "Bac 01",
+          "zone": "Zone A",
+          "shelf": "Rayon 01",
+          "status": "en_stock",
+          "hubName": "Hub Principal Laâyoune",
+          "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+          "unitCode": "FSU-261123-DJSJ-020",
+          "createdAt": "2026-11-23T12:34:26.115Z",
+          "productId": "stkprod-1795437266115-djsj",
+          "scannedAt": "2026-11-23T12:35:59.636Z",
+          "scannedBy": "OTHMAN"
+        }
+      ],
+      "hubName": "Hub Principal Laâyoune",
+      "skuCode": "SKU-261123-DJSJ",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "photoUrl": "data:image/jpeg;base64,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",
+      "createdAt": "2026-11-23T12:34:26.115Z",
+      "unitPrice": 40,
+      "updatedAt": "2026-11-23T12:35:59.636Z",
+      "clientName": "OTHMAN",
+      "clientCompany": "OTHMAN",
+      "initialQuantity": 20
+    }
+  ],
+  "clientStockMovements": [
+    {
+      "id": "stkmov-1795437359636-kcq4",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-020 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:35:59.636Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-020"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437354449-fj7w",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-019 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:35:54.449Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-019"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437338766-5e9b",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-018 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:35:38.766Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-018"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437331951-kg50",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-017 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:35:31.951Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-017"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437327547-5czk",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-016 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:35:27.547Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-016"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437319869-bh57",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-015 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:35:19.869Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-015"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437317607-tnsv",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-014 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:35:17.607Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-014"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437310799-t8dc",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-013 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:35:10.799Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-013"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437308763-letk",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-012 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:35:08.763Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-012"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437306961-8iy0",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-011 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:35:06.961Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-011"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437305215-yngu",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-010 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:35:05.215Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-010"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437302625-d8pj",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-009 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:35:02.625Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-009"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437299846-692y",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-008 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:34:59.846Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-008"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437297286-8wuz",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-007 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:34:57.286Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-007"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437295158-0fdu",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-006 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:34:55.158Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-006"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437292147-6fft",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-005 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:34:52.147Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-005"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437290300-yjub",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-004 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:34:50.300Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-004"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437288074-1vex",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-003 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:34:48.074Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-003"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437285836-dti9",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-002 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:34:45.836Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-002"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437281811-8cly",
+      "type": "scan_stock",
+      "notes": "سكان قطعة FSU-261123-DJSJ-001 ووضعها فالسطوك (Hub Principal Laâyoune - Zone A/Rayon 01/Bac 01)",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 1,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:34:41.811Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-001"
+      ],
+      "productName": "تقاشر شتوية"
+    },
+    {
+      "id": "stkmov-1795437266115-iepd",
+      "type": "entree_creation",
+      "notes": "إضافة منتوج جديد (20 قطعة) وتوليد 20 كود سكان خاص بكل قطعة",
+      "clientId": "04a78e4e-5569-4a36-976b-3a4580c35e83",
+      "quantity": 20,
+      "actorName": "OTHMAN",
+      "createdAt": "2026-11-23T12:34:26.115Z",
+      "productId": "stkprod-1795437266115-djsj",
+      "unitCodes": [
+        "FSU-261123-DJSJ-001",
+        "FSU-261123-DJSJ-002",
+        "FSU-261123-DJSJ-003",
+        "FSU-261123-DJSJ-004",
+        "FSU-261123-DJSJ-005",
+        "FSU-261123-DJSJ-006",
+        "FSU-261123-DJSJ-007",
+        "FSU-261123-DJSJ-008",
+        "FSU-261123-DJSJ-009",
+        "FSU-261123-DJSJ-010",
+        "FSU-261123-DJSJ-011",
+        "FSU-261123-DJSJ-012",
+        "FSU-261123-DJSJ-013",
+        "FSU-261123-DJSJ-014",
+        "FSU-261123-DJSJ-015",
+        "FSU-261123-DJSJ-016",
+        "FSU-261123-DJSJ-017",
+        "FSU-261123-DJSJ-018",
+        "FSU-261123-DJSJ-019",
+        "FSU-261123-DJSJ-020"
+      ],
+      "productName": "تقاشر شتوية"
+    }
+  ],
+  "clientStockInvoices": [],
+  "whatsappLogs": [
+    {
+      "id": "wa-1795437912156-x22s",
+      "error": "URL Webhook WhatsApp non configurée dans Paramètres",
+      "status": "livre",
+      "message": "📦 FARIOUSY  FAST DELIVERY SARL : Bonjour Hanan, votre colis FAR-854877 (Tan-Tan) est désormais : Livré. Montant COD: 160 MAD.",
+      "createdAt": "2026-11-23T12:45:12.156Z",
+      "packageId": "ad8c005e-b85e-402f-beff-f11e6a7276ea",
+      "statusLabel": "Livré",
+      "deliveryState": "not_configured",
+      "merchantPhone": "0706574676",
+      "recipientName": "Hanan",
+      "recipientPhone": "0644720171",
+      "trackingNumber": "FAR-854877",
+      "webhookConfigured": false
+    },
+    {
+      "id": "wa-1795437021825-zcmv",
+      "packageId": "ad8c005e-b85e-402f-beff-f11e6a7276ea",
+      "trackingNumber": "FAR-854877",
+      "recipientName": "Hanan",
+      "recipientPhone": "0644720171",
+      "merchantPhone": "0706574676",
+      "status": "ramasse",
+      "statusLabel": "Ramassé",
+      "message": "📦 FARIOUSY  FAST DELIVERY SARL : Bonjour Hanan, votre colis FAR-854877 (Tan-Tan) est désormais : Ramassé. Montant COD: 160 MAD.",
+      "webhookConfigured": false,
+      "deliveryState": "not_configured",
+      "error": "URL Webhook WhatsApp non configurée dans Paramètres",
+      "createdAt": "2026-11-23T12:30:21.825Z"
+    },
+    {
+      "id": "wa-1795436913633-3imn",
+      "packageId": "ad8c005e-b85e-402f-beff-f11e6a7276ea",
+      "trackingNumber": "FAR-854877",
+      "recipientName": "Hanan",
+      "recipientPhone": "0644720171",
+      "merchantPhone": "0706574676",
+      "status": "reporte",
+      "statusLabel": "Livraison reportée",
+      "message": "📦 FARIOUSY  FAST DELIVERY SARL : Bonjour Hanan, votre colis FAR-854877 (Tan-Tan) est désormais : Livraison reportée. Montant COD: 160 MAD.",
+      "webhookConfigured": false,
+      "deliveryState": "not_configured",
+      "error": "URL Webhook WhatsApp non configurée dans Paramètres",
+      "createdAt": "2026-11-23T12:28:33.633Z"
+    },
+    {
+      "id": "wa-1795436517131-ll72",
+      "packageId": "ad8c005e-b85e-402f-beff-f11e6a7276ea",
+      "trackingNumber": "FAR-854877",
+      "recipientName": "Hanan",
+      "recipientPhone": "0644720171",
+      "merchantPhone": "0706574676",
+      "status": "ramasse",
+      "statusLabel": "Ramassé",
+      "message": "📦 FARIOUSY  FAST DELIVERY SARL : Bonjour Hanan, votre colis FAR-854877 (Tan-Tan) est désormais : Ramassé. Montant COD: 160 MAD.",
+      "webhookConfigured": false,
+      "deliveryState": "not_configured",
+      "error": "URL Webhook WhatsApp non configurée dans Paramètres",
+      "createdAt": "2026-11-23T12:21:57.131Z"
+    },
+    {
+      "id": "wa-1795424058975-5s58",
+      "error": "URL Webhook WhatsApp non configurée dans Paramètres",
+      "status": "en_cours_livraison",
+      "message": "📦 FARIOUSY  FAST DELIVERY SARL : Bonjour Test Destinataire FARIOUSY, votre colis FAR-TEST-WA01 (Casablanca) est désormais : En cours de livraison. Montant COD: 250 MAD.",
+      "createdAt": "2026-11-23T08:54:18.975Z",
+      "packageId": "test",
+      "statusLabel": "En cours de livraison",
+      "deliveryState": "not_configured",
+      "recipientName": "Test Destinataire FARIOUSY",
+      "recipientPhone": "+212 604 06 06 47",
+      "trackingNumber": "FAR-TEST-WA01",
+      "webhookConfigured": false
+    },
+    {
+      "id": "wa-1795201143584-pfgx",
+      "error": "URL Webhook WhatsApp non configurée dans Paramètres",
+      "status": "livre",
+      "message": "📦 FARIOUSY DELIVERY SARL : Bonjour Hanan, votre colis FAR-854877 (Tan-Tan) est désormais : Livré. Montant COD: 160 MAD.",
+      "createdAt": "2026-11-20T18:59:03.584Z",
+      "packageId": "ad8c005e-b85e-402f-beff-f11e6a7276ea",
+      "statusLabel": "Livré",
+      "deliveryState": "not_configured",
+      "merchantPhone": "0706574676",
+      "recipientName": "Hanan",
+      "recipientPhone": "0644720171",
+      "trackingNumber": "FAR-854877",
+      "webhookConfigured": false
+    }
+  ],
+  "visitorStats": {
+    "chrome": 20,
+    "safari": 0,
+    "firefox": 0,
+    "edge": 0,
+    "other": 7,
+    "updatedAt": "2026-11-23T12:21:28.382Z"
+  },
+  "systemCollections": {
+    "cities": [
+      {
+        "id": "city-1",
+        "name": "Casablanca",
+        "active": true,
+        "region": "Grand Casablanca",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-2",
+        "name": "Rabat",
+        "active": true,
+        "region": "Rabat-Salé-Kénitra",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-3",
+        "name": "Marrakech",
+        "active": true,
+        "region": "Marrakech-Safi",
+        "returnFee": 15,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-4",
+        "name": "Tanger",
+        "active": true,
+        "region": "Tanger-Tétouan-Al Hoceïma",
+        "returnFee": 15,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-5",
+        "name": "Fès",
+        "active": true,
+        "region": "Fès-Meknès",
+        "returnFee": 15,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-6",
+        "name": "Meknès",
+        "active": true,
+        "region": "Fès-Meknès",
+        "returnFee": 15,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-7",
+        "name": "Agadir",
+        "active": true,
+        "region": "Souss-Massa",
+        "returnFee": 20,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-8",
+        "name": "Oujda",
+        "active": true,
+        "region": "Oriental",
+        "returnFee": 20,
+        "defaultFee": 45,
+        "deliveryDelayHours": 72
+      },
+      {
+        "id": "city-9",
+        "name": "Kénitra",
+        "active": true,
+        "region": "Rabat-Salé-Kénitra",
+        "returnFee": 15,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-10",
+        "name": "Mohammedia",
+        "active": true,
+        "region": "Grand Casablanca",
+        "returnFee": 15,
+        "defaultFee": 45,
+        "deliveryDelayHours": 24
+      },
+      {
+        "id": "city-11",
+        "name": "Laâyoune",
+        "active": true,
+        "region": "Sud",
+        "returnFee": 0,
+        "defaultFee": 15,
+        "deliveryDelayHours": 24
+      },
+      {
+        "id": "city-12",
+        "name": "Akhfennir",
+        "active": true,
+        "region": "Sud",
+        "returnFee": 10,
+        "defaultFee": 30,
+        "deliveryDelayHours": 24
+      },
+      {
+        "id": "city-13",
+        "name": "Assa",
+        "active": true,
+        "region": "Sud",
+        "returnFee": 10,
+        "defaultFee": 30,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-14",
+        "name": "Boujdour",
+        "active": true,
+        "region": "Sud",
+        "returnFee": 10,
+        "defaultFee": 30,
+        "deliveryDelayHours": 24
+      },
+      {
+        "id": "city-15",
+        "name": "Dakhla",
+        "active": true,
+        "region": "Sud",
+        "returnFee": 10,
+        "defaultFee": 30,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-16",
+        "name": "Es-Semara",
+        "active": true,
+        "region": "Sud",
+        "returnFee": 10,
+        "defaultFee": 30,
+        "deliveryDelayHours": 24
+      },
+      {
+        "id": "city-17",
+        "name": "El Marsa",
+        "active": true,
+        "region": "Sud",
+        "returnFee": 10,
+        "defaultFee": 30,
+        "deliveryDelayHours": 24
+      },
+      {
+        "id": "city-18",
+        "name": "Guelmim",
+        "active": true,
+        "region": "Sud",
+        "returnFee": 10,
+        "defaultFee": 30,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-19",
+        "name": "Tarfaya",
+        "active": true,
+        "region": "Sud",
+        "returnFee": 10,
+        "defaultFee": 30,
+        "deliveryDelayHours": 24
+      },
+      {
+        "id": "city-20",
+        "name": "Tiznit",
+        "active": true,
+        "region": "Souss-Massa",
+        "returnFee": 10,
+        "defaultFee": 30,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-21",
+        "name": "Tan-Tan",
+        "active": true,
+        "region": "Sud",
+        "returnFee": 10,
+        "defaultFee": 30,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-22",
+        "name": "Arfoud",
+        "active": true,
+        "region": "Tafilalt",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-23",
+        "name": "Azilal",
+        "active": true,
+        "region": "Béni Mellal",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-24",
+        "name": "Agdez",
+        "active": true,
+        "region": "Sud Est",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-25",
+        "name": "Aït Ourir",
+        "active": true,
+        "region": "Marrakech-Safi",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-26",
+        "name": "Aït Melloul",
+        "active": true,
+        "region": "Souss-Massa",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-27",
+        "name": "Azemmour",
+        "active": true,
+        "region": "Casablanca-Settat",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 24
+      },
+      {
+        "id": "city-28",
+        "name": "Bouznika",
+        "active": true,
+        "region": "Casablanca-Settat",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 24
+      },
+      {
+        "id": "city-29",
+        "name": "Boumalne Dadès",
+        "active": true,
+        "region": "Sud Est",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-30",
+        "name": "Ben Guerir",
+        "active": true,
+        "region": "Marrakech-Safi",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-31",
+        "name": "Benslimane",
+        "active": true,
+        "region": "Casablanca-Settat",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 24
+      },
+      {
+        "id": "city-32",
+        "name": "Bir Gandouz",
+        "active": true,
+        "region": "Sud",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 72
+      },
+      {
+        "id": "city-33",
+        "name": "Boumia",
+        "active": true,
+        "region": "Béni Mellal",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-34",
+        "name": "Belfaa",
+        "active": true,
+        "region": "Souss-Massa",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-35",
+        "name": "Berrechid",
+        "active": true,
+        "region": "Casablanca-Settat",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 24
+      },
+      {
+        "id": "city-36",
+        "name": "Béni Mellal",
+        "active": true,
+        "region": "Béni Mellal",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-37",
+        "name": "Berkane",
+        "active": true,
+        "region": "Oriental",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-38",
+        "name": "Chichaoua",
+        "active": true,
+        "region": "Marrakech-Safi",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-39",
+        "name": "Chefchaouen",
+        "active": true,
+        "region": "Nord",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-40",
+        "name": "Demnate",
+        "active": true,
+        "region": "Béni Mellal",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-41",
+        "name": "Errachidia",
+        "active": true,
+        "region": "Tafilalt",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-42",
+        "name": "Essaouira",
+        "active": true,
+        "region": "Marrakech-Safi",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-43",
+        "name": "El Hoceïma",
+        "active": true,
+        "region": "Nord",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-44",
+        "name": "El Jadida",
+        "active": true,
+        "region": "Doukkala",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 24
+      },
+      {
+        "id": "city-45",
+        "name": "Figuig",
+        "active": true,
+        "region": "Oriental",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 72
+      },
+      {
+        "id": "city-46",
+        "name": "Fnideq",
+        "active": true,
+        "region": "Nord",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-47",
+        "name": "Fkih Ben Saleh",
+        "active": true,
+        "region": "Béni Mellal",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-48",
+        "name": "Guercif",
+        "active": true,
+        "region": "Oriental",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-49",
+        "name": "El Hajeb",
+        "active": true,
+        "region": "Fès-Meknès",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-50",
+        "name": "Ifrane",
+        "active": true,
+        "region": "Fès-Meknès",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-51",
+        "name": "Ksar Sghir",
+        "active": true,
+        "region": "Nord",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-52",
+        "name": "Ksar El Kebir",
+        "active": true,
+        "region": "Nord",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-53",
+        "name": "Khémisset",
+        "active": true,
+        "region": "Rabat-Salé-Kénitra",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-54",
+        "name": "Kelaat M'Gouna",
+        "active": true,
+        "region": "Sud Est",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-55",
+        "name": "Khénifra",
+        "active": true,
+        "region": "Béni Mellal",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-56",
+        "name": "Kasba Tadla",
+        "active": true,
+        "region": "Béni Mellal",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-57",
+        "name": "Kelaat Sraghna",
+        "active": true,
+        "region": "Marrakech-Safi",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-58",
+        "name": "Larache",
+        "active": true,
+        "region": "Nord",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-59",
+        "name": "M'diq",
+        "active": true,
+        "region": "Nord",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-60",
+        "name": "Midelt",
+        "active": true,
+        "region": "Tafilalt",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-61",
+        "name": "M'hamid El Ghizlane",
+        "active": true,
+        "region": "Sud Est",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 72
+      },
+      {
+        "id": "city-62",
+        "name": "Mrirt",
+        "active": true,
+        "region": "Béni Mellal",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-63",
+        "name": "Midar",
+        "active": true,
+        "region": "Nord",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-64",
+        "name": "Missour",
+        "active": true,
+        "region": "Tafilalt",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-65",
+        "name": "Merzouga",
+        "active": true,
+        "region": "Sud Est",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 72
+      },
+      {
+        "id": "city-66",
+        "name": "Nador",
+        "active": true,
+        "region": "Nord",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-67",
+        "name": "Oualidia",
+        "active": true,
+        "region": "Casablanca-Settat",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-68",
+        "name": "Ouazzane",
+        "active": true,
+        "region": "Nord",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-69",
+        "name": "Ouarzazate",
+        "active": true,
+        "region": "Sud Est",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-70",
+        "name": "Rissani",
+        "active": true,
+        "region": "Tafilalt",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-71",
+        "name": "Rich",
+        "active": true,
+        "region": "Tafilalt",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-72",
+        "name": "Sidi Kacem",
+        "active": true,
+        "region": "Rabat-Salé-Kénitra",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-73",
+        "name": "Sefrou",
+        "active": true,
+        "region": "Fès-Meknès",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-74",
+        "name": "Sidi Ifni",
+        "active": true,
+        "region": "Sud",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-75",
+        "name": "Safi",
+        "active": true,
+        "region": "Marrakech-Safi",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-76",
+        "name": "Skoura",
+        "active": true,
+        "region": "Sud Est",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-77",
+        "name": "Skhirat",
+        "active": true,
+        "region": "Rabat-Salé-Kénitra",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 24
+      },
+      {
+        "id": "city-78",
+        "name": "Salé",
+        "active": true,
+        "region": "Rabat-Salé-Kénitra",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 24
+      },
+      {
+        "id": "city-79",
+        "name": "Settat",
+        "active": true,
+        "region": "Casablanca-Settat",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 24
+      },
+      {
+        "id": "city-80",
+        "name": "Saïdia",
+        "active": true,
+        "region": "Oriental",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-81",
+        "name": "Sidi Yahya El Gharb",
+        "active": true,
+        "region": "Rabat-Salé-Kénitra",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-82",
+        "name": "Sidi Slimane",
+        "active": true,
+        "region": "Rabat-Salé-Kénitra",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-83",
+        "name": "Taza",
+        "active": true,
+        "region": "Fès-Meknès",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-84",
+        "name": "Tazenakht",
+        "active": true,
+        "region": "Sud Est",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-85",
+        "name": "Tata",
+        "active": true,
+        "region": "Sud Est",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 72
+      },
+      {
+        "id": "city-86",
+        "name": "Tinjdad",
+        "active": true,
+        "region": "Sud Est",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-87",
+        "name": "Timahdite",
+        "active": true,
+        "region": "Tafilalt",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-88",
+        "name": "Tétouan",
+        "active": true,
+        "region": "Nord",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-89",
+        "name": "Tinghir",
+        "active": true,
+        "region": "Sud Est",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-90",
+        "name": "Témara",
+        "active": true,
+        "region": "Rabat-Salé-Kénitra",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 24
+      },
+      {
+        "id": "city-91",
+        "name": "Taounate",
+        "active": true,
+        "region": "Fès-Meknès",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-92",
+        "name": "Taliouine",
+        "active": true,
+        "region": "Souss-Massa",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-93",
+        "name": "Taroudant",
+        "active": true,
+        "region": "Souss-Massa",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-94",
+        "name": "Tiflet",
+        "active": true,
+        "region": "Rabat-Salé-Kénitra",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-95",
+        "name": "Youssoufia",
+        "active": true,
+        "region": "Marrakech-Safi",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      },
+      {
+        "id": "city-96",
+        "name": "Zagora",
+        "active": true,
+        "region": "Sud Est",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 72
+      },
+      {
+        "id": "city-97",
+        "name": "Zaïda",
+        "active": true,
+        "region": "Tafilalt",
+        "returnFee": 10,
+        "defaultFee": 45,
+        "deliveryDelayHours": 48
+      }
+    ],
+    "vehicles": [],
+    "partners": [
+      {
+        "id": "part-1794860931651",
+        "name": "olivraison ",
+        "contactPerson": "karima ",
+        "phone": "0760660167",
+        "email": "olivraison@gmail.com",
+        "city": "Casablanca",
+        "address": "",
+        "website": "",
+        "logoUrl": "",
+        "active": true,
+        "notes": "Out for Delivery\nDelivered\nNot Serious\nPrice Problem\nClient Absent\nIncorrect Phone\nUnserved Area\nNo Response 1\nNo Response 2\nNo Response 3\nVoice Box\nPostponed\nLost\nDamaged\nRefused\nCanceled\nScheduled\nUnreachable\nOn a Trip\nRelaunch\nReceived\n",
+        "deliveryFee": 30,
+        "returnFee": 10,
+        "settlements": [],
+        "apiConfig": {
+          "apiKey": "htt••••••••ate",
+          "baseUrl": "https://partners.olivraison.com",
+          "enabled": true,
+          "authType": "bearer",
+          "autoSync": true,
+          "password": "",
+          "username": "",
+          "apiSecret": "",
+          "endpoints": {
+            "syncStatus": "/api/v1/parcels/state",
+            "getTracking": "/api/v1/parcels",
+            "createShipment": "/api/v1/parcels",
+            "webhookInbound": "/api/webhooks/olivraison"
+          },
+          "headerName": "X-API-KEY",
+          "adapterType": "olivraison",
+          "autoDispatch": true,
+          "webhookSecret": "oNl••••••••Rk=",
+          "createdParcelsCount": 0,
+          "failedTransmissions": [
+            {
+              "id": "fail-1794864340580-tbwy",
+              "message": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/v1/parcels</pre>\n</",
+              "packageId": "23083f6b-ad6e-4866-ab3e-b44975320248",
+              "timestamp": "2026-11-16T21:25:40.580Z",
+              "trackingNumber": "FAR-758674"
+            }
+          ]
+        },
+        "totalSent": 0,
+        "totalReceived": 0,
+        "totalDelivered": 0,
+        "totalPending": 0,
+        "webhookToken": "oNlJehJtOzviB686BhUZxNQ0JkXtAXQuVQTDfzSuoRk="
+      }
+    ],
+    "partnerSyncLogs": [],
+    "pickups": [],
+    "payments": [
+      {
+        "id": "pay-1795434364537",
+        "date": "2026-11-23",
+        "notes": "Règlement après déduction emballage et frais",
+        "status": "paye",
+        "clientId": "1cb2b2fa-5713-41c5-a8bc-d50114f6dc21",
+        "netAmount": 120,
+        "reference": "REL-2026-0001",
+        "clientName": "Azzeddine",
+        "packageIds": [
+          "23083f6b-ad6e-4866-ab3e-b44975320248"
+        ],
+        "packageCount": 1,
+        "clientCompany": "Azzeddine",
+        "packagingFees": 0,
+        "paymentMethod": "Virement bancaire",
+        "settledDebtIds": [],
+        "totalCollected": 165,
+        "extraDeductions": 0,
+        "totalDeliveryFees": 45
+      }
+    ],
+    "clientDebts": [],
+    "transferReceipts": [],
+    "bons": [],
+    "stockLocations": [
+      {
+        "id": "stk-001",
+        "bin": "Casier A-05",
+        "zone": "Zone A - Grand Casablanca",
+        "notes": "Vérifié par Nadia Berrada",
+        "shelf": "Rayon 02",
+        "status": "en_stock",
+        "hubName": "Hub Central Casablanca",
+        "enteredAt": "2026-10-26T14:00:00Z",
+        "packageId": "pkg-003",
+        "lastAuditedAt": "2026-10-28T09:30:00Z",
+        "trackingNumber": "FAR-2601-8493"
+      },
+      {
+        "id": "stk-002",
+        "bin": "Casier T-18",
+        "zone": "Zone B - Transit Inter-villes",
+        "notes": "Attente départ ligne Tanger",
+        "shelf": "Rayon 05",
+        "status": "en_stock",
+        "hubName": "Hub Central Casablanca",
+        "enteredAt": "2026-10-26T16:20:00Z",
+        "packageId": "pkg-004",
+        "lastAuditedAt": "2026-10-28T10:00:00Z",
+        "trackingNumber": "FAR-2601-8494"
+      }
+    ],
+    "employees": [],
+    "savedAddresses": [],
+    "clientCustomRates": {},
+    "clientMessages": [
+      {
+        "id": "msg-1794690111411",
+        "status": "ferme",
+        "message": "ATTENTION",
+        "replies": [
+          {
+            "id": "rep-1794690256919",
+            "message": "GHIR SBER M3ANA",
+            "senderId": "usr-admin-wadar",
+            "createdAt": "2026-11-14T21:04:16.919Z",
+            "senderName": "Azzeddine Wadar",
+            "senderRole": "admin"
+          }
+        ],
+        "subject": "Colis non encore livré après 48h",
+        "category": "reclamation_colis",
+        "clientId": "1cb2b2fa-5713-41c5-a8bc-d50114f6dc21",
+        "priority": "normale",
+        "createdAt": "2026-11-14T21:01:51.411+00:00",
+        "packageId": null,
+        "updatedAt": "2026-11-14T21:05:46.143+00:00",
+        "clientName": "Azzeddine",
+        "resolvedAt": "2026-11-14T21:05:46.143+00:00",
+        "resolvedBy": "Azzeddine Wadar",
+        "clientEmail": "stefariousy@gmail.com",
+        "clientPhone": "0653533936",
+        "clientCompany": "Boutique Partenaire",
+        "packageTrackingNumber": null
+      }
+    ],
+    "driverRequests": [
+      {
+        "id": "dreq-001",
+        "city": "Casablanca",
+        "email": "amine.mansouri@gmail.com",
+        "notes": "Permis A & B depuis 4 ans, expérience livraison express à Casablanca.",
+        "phone": "+212 662 44 55 66",
+        "status": "refuse",
+        "address": "Quartier Oulfa, Rue 14 N°22, Casablanca",
+        "fullName": "Amine Mansouri",
+        "cinNumber": "BK718292",
+        "reviewedAt": "2026-10-31 19:26",
+        "reviewedBy": "Direction FARIOUSY",
+        "driverPlate": "54321-A-6",
+        "submittedAt": "2026-10-30T10:15:00Z",
+        "vehicleType": "Moto",
+        "rejectionReason": "ok"
+      },
+      {
+        "id": "dreq-003",
+        "city": "Marrakech",
+        "email": "k.zouhair99@hotmail.com",
+        "notes": "Candidat invité à repostuler avec une moto.",
+        "phone": "+212 670 12 34 56",
+        "status": "refuse",
+        "address": "Daoudiate, Secteur 3 N°18, Marrakech",
+        "fullName": "Karim Zouhair",
+        "cinNumber": "EE882103",
+        "reviewedAt": "2026-10-26T10:00:00Z",
+        "reviewedBy": "Azzeddine Wadar (Admin)",
+        "driverPlate": "",
+        "submittedAt": "2026-10-25T14:30:00Z",
+        "vehicleType": "Vélo",
+        "rejectionReason": "Zone de livraison requiert un véhicule motorisé pour les liaisons extra-muros."
+      },
+      {
+        "id": "dreq-002",
+        "city": "Casablanca",
+        "email": "livreur.yassine@fariousy.com",
+        "notes": "Dossier complet validé.",
+        "phone": "+212 664 88 99 00",
+        "status": "approuve",
+        "address": "Hay Mohammadi, Bloc 12 N°4",
+        "fullName": "Yassine Bakkali",
+        "cinNumber": "BE549102",
+        "reviewedAt": "2025-03-01T11:00:00Z",
+        "reviewedBy": "Azzeddine Wadar (Admin)",
+        "driverPlate": "45678-A-26",
+        "submittedAt": "2025-02-28T09:00:00Z",
+        "vehicleType": "Voiture"
+      }
+    ],
+    "notifications": [
+      {
+        "id": "notif-1795434364538fo1r",
+        "read": false,
+        "type": "success",
+        "title": "Paiement client généré",
+        "message": "Relevé REL-2026-0001 de 120 MAD généré pour Azzeddine.",
+        "timestamp": "2026-11-23 11:46",
+        "targetClientId": "1cb2b2fa-5713-41c5-a8bc-d50114f6dc21"
+      },
+      {
+        "id": "notif-1795434299505zns8",
+        "read": false,
+        "type": "success",
+        "title": "Statut de colis mis à jour",
+        "message": "FAR-854877 : Statut passé à \"Livré\" (Enregistré dans Supabase)",
+        "timestamp": "2026-11-23 11:44"
+      },
+      {
+        "id": "notif-1795434232762ml86",
+        "read": false,
+        "type": "info",
+        "title": "Colis désaffecté(s)",
+        "message": "1 colis : Désaffecté(s) (Enregistré dans Supabase)",
+        "timestamp": "2026-11-23 11:43"
+      },
+      {
+        "id": "notif-1795433409645v2h8",
+        "read": false,
+        "type": "info",
+        "title": "Statut de colis mis à jour",
+        "message": "FAR-854877 : Statut passé à \"Ramassé\" (Enregistré dans Supabase)",
+        "timestamp": "2026-11-23 11:30"
+      },
+      {
+        "id": "notif-1795433301496f5qo",
+        "read": false,
+        "type": "info",
+        "title": "Statut de colis mis à jour",
+        "message": "FAR-854877 : Statut passé à \"Livraison reportée\" (Enregistré dans Supabase)",
+        "timestamp": "2026-11-23 11:28"
+      },
+      {
+        "id": "notif-17954331960423vn5",
+        "read": false,
+        "type": "info",
+        "title": "Colis affecté(s) au livreur",
+        "message": "1 colis : Affecté(s) à azzeddine ait ouadar (Enregistré dans Supabase)",
+        "timestamp": "2026-11-23 11:26"
+      },
+      {
+        "id": "notif-17954329049696ig9",
+        "read": false,
+        "type": "info",
+        "title": "Statut de colis mis à jour",
+        "message": "FAR-854877 : Statut passé à \"Ramassé\" (Enregistré dans Supabase)",
+        "timestamp": "2026-11-23 11:21"
+      },
+      {
+        "id": "notif-17952011434979oav",
+        "read": false,
+        "type": "success",
+        "title": "Statut de colis mis à jour",
+        "message": "FAR-854877 : Statut passé à \"Livré\" (Enregistré dans Supabase)",
+        "timestamp": "2026-11-20 18:59"
+      },
+      {
+        "id": "notif-1795037559203l3rz",
+        "read": false,
+        "type": "info",
+        "title": "Statut de colis mis à jour",
+        "message": "FAR-854877 : Statut passé à \"Ramassé\" (Enregistré dans Supabase)",
+        "timestamp": "2026-11-18 21:32"
+      },
+      {
+        "id": "notif-1795030713385904g",
+        "read": false,
+        "type": "info",
+        "title": "Colis transféré au partenaire",
+        "message": "Le colis a été transféré à olivraison  (N° de suivi : TRF-PART-712306).",
+        "timestamp": "2026-11-18 19:38"
+      },
+      {
+        "id": "notif-1795030680391pg6n",
+        "read": false,
+        "type": "info",
+        "title": "Statut de colis mis à jour",
+        "message": "FAR-854877 : Statut passé à \"Ramassé\" (Enregistré dans Supabase)",
+        "timestamp": "2026-11-18 19:38"
+      },
+      {
+        "id": "notif-1795030673556pnol",
+        "read": false,
+        "type": "success",
+        "title": "Statut de colis mis à jour",
+        "message": "FAR-854877 : Statut passé à \"Livré\" (Enregistré dans Supabase)",
+        "timestamp": "2026-11-18 19:37"
+      },
+      {
+        "id": "notif-17950296836241u2u",
+        "read": false,
+        "type": "info",
+        "title": "Hub mis à jour",
+        "message": "Les informations du hub \"Hub Principal Laâyoune\" ont été enregistrées.",
+        "timestamp": "2026-11-18 19:21"
+      },
+      {
+        "id": "notif-179502724725885ry",
+        "read": false,
+        "type": "success",
+        "title": "Statut de colis mis à jour",
+        "message": "FAR-758674 : Statut passé à \"Livré\" (Enregistré dans Supabase)",
+        "timestamp": "2026-11-18 18:40"
+      },
+      {
+        "id": "notif-1795027240568b5l8",
+        "read": false,
+        "type": "info",
+        "title": "Statut de colis mis à jour",
+        "message": "FAR-854877 : Statut passé à \"Ramassé\" (Enregistré dans Supabase)",
+        "timestamp": "2026-11-18 18:40"
+      },
+      {
+        "id": "notif-1795027218436wqgs",
+        "read": false,
+        "type": "success",
+        "title": "Statut de colis mis à jour",
+        "message": "FAR-854877 : Statut passé à \"Livré\" (Enregistré dans Supabase)",
+        "timestamp": "2026-11-18 18:40"
+      },
+      {
+        "id": "notif-1795027197677j7j4",
+        "read": false,
+        "type": "info",
+        "title": "Colis transféré au partenaire",
+        "message": "Le colis a été transféré à olivraison  (N° de suivi : TRF-PART-197178).",
+        "timestamp": "2026-11-18 18:39"
+      },
+      {
+        "id": "notif-1795027182707n6hm",
+        "read": false,
+        "type": "info",
+        "title": "Statut de colis mis à jour",
+        "message": "FAR-758674 : Statut passé à \"Ramassé\" (Enregistré dans Supabase)",
+        "timestamp": "2026-11-18 18:39"
+      },
+      {
+        "id": "notif-1795020763304w8sd",
+        "read": false,
+        "type": "info",
+        "title": "Statut de colis mis à jour",
+        "message": "FAR-854877 : Statut passé à \"Ramassé\" ",
+        "timestamp": "2026-11-18 16:52"
+      },
+      {
+        "id": "notif-1795020763234132v",
+        "read": false,
+        "type": "alert",
+        "title": "Avertissement enregistrement Supabase",
+        "message": "Failed to fetch",
+        "timestamp": "2026-11-18 16:52"
+      },
+      {
+        "id": "notif-1795008254441i1hb",
+        "read": false,
+        "type": "success",
+        "title": "Statut de colis mis à jour",
+        "message": "FAR-758674 : Statut passé à \"Livré\" (Enregistré dans Supabase)",
+        "timestamp": "2026-11-18 13:24"
+      }
+    ],
+    "auditLogs": [
+      {
+        "id": "log-17954383938171zxo",
+        "module": "cities",
+        "userId": "usr-admin",
+        "details": "Mise à jour des tarifs et délais",
+        "entityId": "city-10",
+        "userName": "Administrateur",
+        "userRole": "admin",
+        "timestamp": "2026-11-23T12:53:13.817Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Ville ID city-10"
+      },
+      {
+        "id": "log-17954383762940my5",
+        "module": "cities",
+        "userId": "usr-admin",
+        "details": "Mise à jour des tarifs et délais",
+        "entityId": "city-9",
+        "userName": "Administrateur",
+        "userRole": "admin",
+        "timestamp": "2026-11-23T12:52:56.294Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Ville ID city-9"
+      },
+      {
+        "id": "log-1795438352958ien6",
+        "module": "cities",
+        "userId": "usr-admin",
+        "details": "Mise à jour des tarifs et délais",
+        "entityId": "city-7",
+        "userName": "Administrateur",
+        "userRole": "admin",
+        "timestamp": "2026-11-23T12:52:32.958Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Ville ID city-7"
+      },
+      {
+        "id": "log-1795438346783h57k",
+        "module": "cities",
+        "userId": "usr-admin",
+        "details": "Mise à jour des tarifs et délais",
+        "entityId": "city-6",
+        "userName": "Administrateur",
+        "userRole": "admin",
+        "timestamp": "2026-11-23T12:52:26.783Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Ville ID city-6"
+      },
+      {
+        "id": "log-1795438339858vcdi",
+        "module": "cities",
+        "userId": "usr-admin",
+        "details": "Mise à jour des tarifs et délais",
+        "entityId": "city-5",
+        "userName": "Administrateur",
+        "userRole": "admin",
+        "timestamp": "2026-11-23T12:52:19.858Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Ville ID city-5"
+      },
+      {
+        "id": "log-1795438330488i51s",
+        "module": "cities",
+        "userId": "usr-admin",
+        "details": "Mise à jour des tarifs et délais",
+        "entityId": "city-4",
+        "userName": "Administrateur",
+        "userRole": "admin",
+        "timestamp": "2026-11-23T12:52:10.489Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Ville ID city-4"
+      },
+      {
+        "id": "log-17954383185994sqm",
+        "module": "cities",
+        "userId": "usr-admin",
+        "details": "Mise à jour des tarifs et délais",
+        "entityId": "city-3",
+        "userName": "Administrateur",
+        "userRole": "admin",
+        "timestamp": "2026-11-23T12:51:58.600Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Ville ID city-3"
+      },
+      {
+        "id": "log-17954349883051lom",
+        "module": "packages",
+        "userId": "7b90506e-0714-41bb-8186-8d6d4d6a31f8",
+        "details": "Modification des informations du colis FAR-20624057",
+        "entityId": "pkg-1795438417444-r8ae",
+        "newValue": "{\"recipientName\":\"شيماء\",\"recipientPhone\":\"0654653758\",\"city\":\"Guelmim\",\"address\":\"حي القصبة\",\"productPrice\":0,\"codAmount\":30,\"description\":\"ملاحف\",\"notes\":\"السلعة خالصة\",\"allowOpen\":true,\"allowTry\":false,\"isFragile\":false,\"isExchange\":false,\"deliveryFee\":30}",
+        "oldValue": "{\"recipient\":\"شيماء\",\"cod\":1494815776,\"status\":\"attente_ramassage\"}",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-23T11:56:28.306Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Colis FAR-20624057"
+      },
+      {
+        "id": "log-1795434951638pzew",
+        "module": "packages",
+        "userId": "7b90506e-0714-41bb-8186-8d6d4d6a31f8",
+        "details": "Modification des informations du colis FAR-11438180",
+        "entityId": "pkg-1795438418514-tdci",
+        "newValue": "{\"recipientName\":\"سعدة\",\"recipientPhone\":\"0718477277\",\"city\":\"Guelmim\",\"address\":\"حي الفيلا\",\"productPrice\":0,\"codAmount\":30,\"description\":\"ملحفة\",\"notes\":\"خالصة\",\"allowOpen\":true,\"allowTry\":false,\"isFragile\":false,\"isExchange\":false,\"deliveryFee\":30}",
+        "oldValue": "{\"recipient\":\"سعدة\",\"cod\":823203575,\"status\":\"attente_ramassage\"}",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-23T11:55:51.638Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Colis FAR-11438180"
+      },
+      {
+        "id": "log-1795434898245km8w",
+        "module": "packages",
+        "userId": "7b90506e-0714-41bb-8186-8d6d4d6a31f8",
+        "details": "Modification des informations du colis FAR-14943455",
+        "entityId": "pkg-1795438417846-4roa",
+        "newValue": "{\"recipientName\":\"علية\",\"recipientPhone\":\"0696385168\",\"city\":\"Guelmim\",\"address\":\"تيرت عند مدرسة سمش العلوم\",\"productPrice\":0,\"codAmount\":30,\"description\":\"ملاحف\",\"notes\":\"خالصة\",\"allowOpen\":true,\"allowTry\":false,\"isFragile\":false,\"isExchange\":false,\"deliveryFee\":30}",
+        "oldValue": "{\"recipient\":\"علية\",\"cod\":1119191094,\"status\":\"attente_ramassage\"}",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-23T11:54:58.245Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Colis FAR-14943455"
+      },
+      {
+        "id": "log-1795434364538y5ng",
+        "action": "Retrait solde client",
+        "entity": "client",
+        "details": "Virement net de 120,00 MAD pour Azzeddine (Déductions لومبلاج/extras: -0,00 MAD)",
+        "entityId": "1cb2b2fa-5713-41c5-a8bc-d50114f6dc21",
+        "timestamp": "2026-11-23T11:46:04.538Z"
+      },
+      {
+        "id": "log-179543436453726m9",
+        "module": "finance",
+        "userId": "usr-admin",
+        "details": "Génération du relevé de reversement CRBT pour Azzeddine — Net: 120 MAD",
+        "entityId": "pay-1795434364537",
+        "userName": "Responsable Finance",
+        "userRole": "admin",
+        "timestamp": "2026-11-23T11:46:04.537Z",
+        "actionType": "CREATE",
+        "entityLabel": "Relevé REL-2026-0001"
+      },
+      {
+        "id": "log-179543429943989h0",
+        "module": "packages",
+        "userId": "usr-admin",
+        "details": "Statut modifié par Administrateur Fariousy depuis la table",
+        "entityId": "ad8c005e-b85e-402f-beff-f11e6a7276ea",
+        "newValue": "livre",
+        "oldValue": "ramasse",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-23T11:44:59.439Z",
+        "actionType": "STATUS_CHANGE",
+        "entityLabel": "Colis FAR-854877"
+      },
+      {
+        "id": "log-1795434232749rx7e",
+        "module": "packages",
+        "userId": "usr-admin",
+        "details": "Désaffectation de 1 colis",
+        "entityId": "ad8c005e-b85e-402f-beff-f11e6a7276ea",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-23T11:43:52.749Z",
+        "actionType": "UPDATE",
+        "entityLabel": "1 colis"
+      },
+      {
+        "id": "log-1795433409618gs00",
+        "module": "packages",
+        "userId": "usr-admin",
+        "details": "Statut modifié par Administrateur Fariousy depuis la table",
+        "entityId": "ad8c005e-b85e-402f-beff-f11e6a7276ea",
+        "newValue": "ramasse",
+        "oldValue": "reporte",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-23T11:30:09.618Z",
+        "actionType": "STATUS_CHANGE",
+        "entityLabel": "Colis FAR-854877"
+      },
+      {
+        "id": "log-1795433301462a7fq",
+        "module": "packages",
+        "userId": "usr-admin",
+        "details": "Reporté au 2026-11-25.",
+        "entityId": "ad8c005e-b85e-402f-beff-f11e6a7276ea",
+        "newValue": "reporte",
+        "oldValue": "en_cours_livraison",
+        "userName": "azzeddine ait ouadar",
+        "userRole": "driver",
+        "timestamp": "2026-11-23T11:28:21.462Z",
+        "actionType": "STATUS_CHANGE",
+        "entityLabel": "Colis FAR-854877"
+      },
+      {
+        "id": "log-1795433196035ocez",
+        "module": "packages",
+        "userId": "usr-admin",
+        "details": "Affectation de 1 colis au livreur azzeddine ait ouadar",
+        "entityId": "ad8c005e-b85e-402f-beff-f11e6a7276ea",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-23T11:26:36.035Z",
+        "actionType": "UPDATE",
+        "entityLabel": "1 colis"
+      },
+      {
+        "id": "log-1795432904923sw1k",
+        "module": "packages",
+        "userId": "usr-admin",
+        "details": "Statut modifié par Administrateur Fariousy depuis la table",
+        "entityId": "ad8c005e-b85e-402f-beff-f11e6a7276ea",
+        "newValue": "ramasse",
+        "oldValue": "livre",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-23T11:21:44.923Z",
+        "actionType": "STATUS_CHANGE",
+        "entityLabel": "Colis FAR-854877"
+      },
+      {
+        "id": "log-17954204647437ac2",
+        "module": "settings",
+        "userId": "usr-admin",
+        "details": "Mise à jour des informations légales, grilles et paramètres de notification",
+        "entityId": "company_settings",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-23T07:54:24.743Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Paramètres Entreprise"
+      },
+      {
+        "id": "log-1795420464574lky0",
+        "module": "settings",
+        "userId": "usr-admin",
+        "details": "Mise à jour des informations légales, grilles et paramètres de notification",
+        "entityId": "company_settings",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-23T07:54:24.574Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Paramètres Entreprise"
+      },
+      {
+        "id": "log-1795420464039p89g",
+        "module": "settings",
+        "userId": "usr-admin",
+        "details": "Mise à jour des informations légales, grilles et paramètres de notification",
+        "entityId": "company_settings",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-23T07:54:24.039Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Paramètres Entreprise"
+      },
+      {
+        "id": "log-1795420463452g3n9",
+        "module": "settings",
+        "userId": "usr-admin",
+        "details": "Mise à jour des informations légales, grilles et paramètres de notification",
+        "entityId": "company_settings",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-23T07:54:23.452Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Paramètres Entreprise"
+      },
+      {
+        "id": "log-17954204089166tih",
+        "module": "settings",
+        "userId": "usr-admin",
+        "details": "Mise à jour des informations légales, grilles et paramètres de notification",
+        "entityId": "company_settings",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-23T07:53:28.916Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Paramètres Entreprise"
+      },
+      {
+        "id": "log-1795420408589oi62",
+        "module": "settings",
+        "userId": "usr-admin",
+        "details": "Mise à jour des informations légales, grilles et paramètres de notification",
+        "entityId": "company_settings",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-23T07:53:28.589Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Paramètres Entreprise"
+      },
+      {
+        "id": "log-1795420408413lrto",
+        "module": "settings",
+        "userId": "usr-admin",
+        "details": "Mise à jour des informations légales, grilles et paramètres de notification",
+        "entityId": "company_settings",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-23T07:53:28.413Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Paramètres Entreprise"
+      },
+      {
+        "id": "log-1795420407873rv2z",
+        "module": "settings",
+        "userId": "usr-admin",
+        "details": "Mise à jour des informations légales, grilles et paramètres de notification",
+        "entityId": "company_settings",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-23T07:53:27.873Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Paramètres Entreprise"
+      },
+      {
+        "id": "log-17954204071984fzp",
+        "module": "settings",
+        "userId": "usr-admin",
+        "details": "Mise à jour des informations légales, grilles et paramètres de notification",
+        "entityId": "company_settings",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-23T07:53:27.198Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Paramètres Entreprise"
+      },
+      {
+        "id": "log-1795420385060rqoz",
+        "module": "settings",
+        "userId": "usr-admin",
+        "details": "Mise à jour des informations légales, grilles et paramètres de notification",
+        "entityId": "company_settings",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-23T07:53:05.060Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Paramètres Entreprise"
+      },
+      {
+        "id": "log-1795420383095xcn6",
+        "module": "settings",
+        "userId": "usr-admin",
+        "details": "Mise à jour des informations légales, grilles et paramètres de notification",
+        "entityId": "company_settings",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-23T07:53:03.095Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Paramètres Entreprise"
+      },
+      {
+        "id": "log-17954202459537gri",
+        "module": "cities",
+        "userId": "usr-admin",
+        "details": "Mise à jour des tarifs et délais",
+        "entityId": "city-2",
+        "userName": "Administrateur",
+        "userRole": "admin",
+        "timestamp": "2026-11-23T07:50:45.953Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Ville ID city-2"
+      },
+      {
+        "id": "log-1795201143142fcud",
+        "module": "packages",
+        "userId": "usr-admin",
+        "details": "Statut modifié par Administrateur Fariousy depuis la table",
+        "entityId": "ad8c005e-b85e-402f-beff-f11e6a7276ea",
+        "newValue": "livre",
+        "oldValue": "ramasse",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-20T18:59:03.142Z",
+        "actionType": "STATUS_CHANGE",
+        "entityLabel": "Colis FAR-854877"
+      },
+      {
+        "id": "log-1795037559089nsug",
+        "module": "packages",
+        "userId": "usr-admin",
+        "details": "Statut modifié par Administrateur Fariousy depuis la table",
+        "entityId": "ad8c005e-b85e-402f-beff-f11e6a7276ea",
+        "newValue": "ramasse",
+        "oldValue": "en_cours_livraison",
+        "userName": "Administrateur Fariousy",
+        "userRole": "admin",
+        "timestamp": "2026-11-18T21:32:39.090Z",
+        "actionType": "STATUS_CHANGE",
+        "entityLabel": "Colis FAR-854877"
+      },
+      {
+        "id": "log-1795030714276tn2x",
+        "action": "Expédition partenaire",
+        "entity": "colis",
+        "details": "Lot de 1 colis confié au transporteur olivraison  (Réf : TRF-PART-712306) - Total frais partenaire : 30 DH",
+        "entityId": "TRF-PART-712306",
+        "timestamp": "2026-11-18T19:38:34.276Z"
+      },
+      {
+        "id": "log-1795030680366cn1d",
+        "module": "packages",
+        "userId": "usr-admin",
+        "details": "Statut modifié par Administrateur Fariousy depuis la table",
+        "entityId": "ad8c005e-b85e-402f-beff-f11e6a7276ea",
+        "newValue": "ramasse",
+        "oldValue": "livre",
+        "userName": "Administrateur Fariousy",
+        "userRole": "admin",
+        "timestamp": "2026-11-18T19:38:00.366Z",
+        "actionType": "STATUS_CHANGE",
+        "entityLabel": "Colis FAR-854877"
+      },
+      {
+        "id": "log-1795030673433ke8k",
+        "module": "packages",
+        "userId": "usr-admin",
+        "details": "Statut modifié par Administrateur Fariousy depuis la table",
+        "entityId": "ad8c005e-b85e-402f-beff-f11e6a7276ea",
+        "newValue": "livre",
+        "oldValue": "ramasse",
+        "userName": "Administrateur Fariousy",
+        "userRole": "admin",
+        "timestamp": "2026-11-18T19:37:53.433Z",
+        "actionType": "STATUS_CHANGE",
+        "entityLabel": "Colis FAR-854877"
+      },
+      {
+        "id": "log-1795029683602168d",
+        "module": "agencies",
+        "userId": "usr-admin",
+        "details": "Mise à jour des informations et du responsable du Hub",
+        "entityId": "agency-layoune",
+        "userName": "Administrateur Fariousy",
+        "userRole": "admin",
+        "timestamp": "2026-11-18T19:21:23.602Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Hub Hub Principal Laâyoune"
+      },
+      {
+        "id": "log-17950272472387796",
+        "module": "packages",
+        "userId": "usr-admin",
+        "details": "Statut modifié par Administrateur Fariousy depuis la table",
+        "entityId": "23083f6b-ad6e-4866-ab3e-b44975320248",
+        "newValue": "livre",
+        "oldValue": "en_transit",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-18T18:40:47.238Z",
+        "actionType": "STATUS_CHANGE",
+        "entityLabel": "Colis FAR-758674"
+      },
+      {
+        "id": "log-1795027240549mf8a",
+        "module": "packages",
+        "userId": "usr-admin",
+        "details": "Statut modifié par Administrateur Fariousy depuis la table",
+        "entityId": "ad8c005e-b85e-402f-beff-f11e6a7276ea",
+        "newValue": "ramasse",
+        "oldValue": "livre",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-18T18:40:40.549Z",
+        "actionType": "STATUS_CHANGE",
+        "entityLabel": "Colis FAR-854877"
+      },
+      {
+        "id": "log-1795027218411fynh",
+        "module": "packages",
+        "userId": "usr-admin",
+        "details": "Statut modifié par Administrateur Fariousy depuis la table",
+        "entityId": "ad8c005e-b85e-402f-beff-f11e6a7276ea",
+        "newValue": "livre",
+        "oldValue": "ramasse",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-18T18:40:18.411Z",
+        "actionType": "STATUS_CHANGE",
+        "entityLabel": "Colis FAR-854877"
+      },
+      {
+        "id": "log-1795027198295hy8p",
+        "action": "Expédition partenaire",
+        "entity": "colis",
+        "details": "Lot de 1 colis confié au transporteur olivraison  (Réf : TRF-PART-197178) - Total frais partenaire : 30 DH",
+        "entityId": "TRF-PART-197178",
+        "timestamp": "2026-11-18T18:39:58.295Z"
+      },
+      {
+        "id": "log-1795027182631pwey",
+        "module": "packages",
+        "userId": "usr-admin",
+        "details": "Statut modifié par Administrateur Fariousy depuis la table",
+        "entityId": "23083f6b-ad6e-4866-ab3e-b44975320248",
+        "newValue": "ramasse",
+        "oldValue": "livre",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-18T18:39:42.631Z",
+        "actionType": "STATUS_CHANGE",
+        "entityLabel": "Colis FAR-758674"
+      },
+      {
+        "id": "log-17950261865233jth",
+        "module": "packages",
+        "userId": "7b90506e-0714-41bb-8186-8d6d4d6a31f8",
+        "details": "Suppression définitive dans Supabase du colis FAR-529705 (Motif : Double)",
+        "entityId": "7163b313-16bd-4a53-86fc-d97d265a0a6c",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-18T18:23:06.523Z",
+        "actionType": "DELETE",
+        "entityLabel": "Colis FAR-529705"
+      },
+      {
+        "id": "log-17950209072803mvf",
+        "module": "packages",
+        "userId": "7b90506e-0714-41bb-8186-8d6d4d6a31f8",
+        "details": "Modification des informations du colis FAR-854877",
+        "entityId": "ad8c005e-b85e-402f-beff-f11e6a7276ea",
+        "newValue": "{\"recipientName\":\"Hanan\",\"recipientPhone\":\"0644720171\",\"city\":\"Tan-Tan\",\"address\":\"hay al qods rue 4\",\"productPrice\":130,\"deliveryFee\":30,\"codAmount\":160,\"description\":\"منتجات العناية\",\"notes\":\"\"}",
+        "oldValue": "{\"recipient\":\"Hanan\",\"cod\":160,\"status\":\"ramasse\"}",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-18T16:55:07.280Z",
+        "actionType": "UPDATE",
+        "entityLabel": "Colis FAR-854877"
+      },
+      {
+        "id": "log-17950082543555d1n",
+        "module": "packages",
+        "userId": "usr-admin",
+        "details": "Statut modifié par Administrateur Fariousy depuis la table",
+        "entityId": "23083f6b-ad6e-4866-ab3e-b44975320248",
+        "newValue": "livre",
+        "oldValue": "en_transit",
+        "userName": "Administrateur Fariousy",
+        "userRole": "super_admin",
+        "timestamp": "2026-11-18T13:24:14.355Z",
+        "actionType": "STATUS_CHANGE",
+        "entityLabel": "Colis FAR-758674"
+      }
+    ],
+    "agencies": [
+      {
+        "id": "agency-layoune",
+        "city": "Laâyoune",
+        "name": "Hub Principal Laâyoune",
+        "type": "hub_principal",
+        "email": "hub.layoune@livraison.ma",
+        "notes": "Hub logistique principal pour la région Sud et Sahara",
+        "phone": "+212 528 89 40 10",
+        "active": true,
+        "address": "Lotissement al aouda",
+        "createdAt": "2024-01-15",
+        "managerName": "Azzeddine aitouadar",
+        "managerEmail": "wadarazzeddine30@gmail.com",
+        "managerPhone": "+212 653533936",
+        "storageCapacity": 5000
+      },
+      {
+        "id": "agency-casa",
+        "city": "Casablanca",
+        "name": "Hub Central Casablanca",
+        "type": "hub_principal",
+        "email": "hub.casa@livraison.ma",
+        "notes": "Hub central de tri national et distribution Grand Casablanca",
+        "phone": "+212 522 89 40 10",
+        "active": true,
+        "address": "Zone Industrielle Sidi Maârouf, Lot 14",
+        "createdAt": "2024-01-10",
+        "managerName": "Amine Benjelloun",
+        "managerEmail": "a.benjelloun@livraison.ma",
+        "managerPhone": "+212 662 11 22 33",
+        "storageCapacity": 8000
+      },
+      {
+        "id": "agency-rabat",
+        "city": "Rabat",
+        "name": "Agence Régionale Rabat",
+        "type": "agence_regionale",
+        "email": "agence.rabat@livraison.ma",
+        "notes": "Agence régionale desservant Rabat, Salé et Témara",
+        "phone": "+212 537 68 20 40",
+        "active": true,
+        "address": "Avenue Annakhil, Secteur 21, Hay Riad",
+        "createdAt": "2024-02-01",
+        "managerName": "Fatima-Zahra El Idrissi",
+        "managerEmail": "fz.idrissi@livraison.ma",
+        "managerPhone": "+212 663 33 44 55",
+        "storageCapacity": 3500
+      },
+      {
+        "id": "agency-tanger",
+        "city": "Tanger",
+        "name": "Agence Nord Tanger Med",
+        "type": "agence_regionale",
+        "email": "agence.tanger@livraison.ma",
+        "notes": "Plateforme régionale Nord, Tanger, Tétouan et zone portuaire",
+        "phone": "+212 539 34 12 90",
+        "active": true,
+        "address": "Boulevard Mohammed VI, Zone Franche Tanger Med",
+        "createdAt": "2024-02-15",
+        "managerName": "Tariq Mansouri",
+        "managerEmail": "t.mansouri@livraison.ma",
+        "managerPhone": "+212 664 55 66 77",
+        "storageCapacity": 4000
+      },
+      {
+        "id": "agency-kech",
+        "city": "Marrakech",
+        "name": "Agence Sud Marrakech",
+        "type": "agence_regionale",
+        "email": "agence.marrakech@livraison.ma",
+        "notes": "Distribution régionale Marrakech, Safi et Essaouira",
+        "phone": "+212 524 45 78 11",
+        "active": true,
+        "address": "Zone Industrielle Sidi Ghanem, Rue Principale N° 88",
+        "createdAt": "2024-03-01",
+        "managerName": "Kenza Alaoui",
+        "managerEmail": "k.alaoui@livraison.ma",
+        "managerPhone": "+212 665 77 88 99",
+        "storageCapacity": 3000
+      }
+    ],
+    "staffPresence": {
+      "7b90506e-0714-41bb-8186-8d6d4d6a31f8": {
+        "role": "super_admin",
+        "userId": "7b90506e-0714-41bb-8186-8d6d4d6a31f8",
+        "userName": "Administrateur Fariousy",
+        "userEmail": "wadarazzeddine30@gmail.com",
+        "lastSeenAt": "2026-11-23T14:13:20.616Z",
+        "workStatus": "off",
+        "currentPage": "admin_packages",
+        "employeeRole": "super_admin",
+        "lastActionAt": "2026-11-23T14:07:03.175Z",
+        "lastActionLabel": "تسجيل الدخول"
+      }
+    },
+    "confirmationLogs": [
+      {
+        "id": "conf-1795009939968-66vig",
+        "city": "Aït Melloul",
+        "channel": "appel",
+        "outcome": "confirme",
+        "codAmount": 165,
+        "packageId": "23083f6b-ad6e-4866-ab3e-b44975320248",
+        "timestamp": "2026-11-18T13:52:19.968Z",
+        "employeeId": "7b90506e-0714-41bb-8186-8d6d4d6a31f8",
+        "employeeName": "Administrateur Fariousy",
+        "employeeRole": "super_admin",
+        "recipientName": "Hasnae",
+        "recipientPhone": "0605739304",
+        "trackingNumber": "FAR-758674"
+      }
+    ],
+    "userNotifications": [],
+    "customerBlacklist": []
+  },
+  "securitySettings": {
+    "requireAdminApprovalForClients": true,
+    "allowPublicClientRegistration": true,
+    "allowPublicDriverRegistration": true,
+    "adminPasswordChanged": true,
+    "updatedAt": "2026-11-16T22:32:33.860Z"
+  },
+  "sessions": {
+    "far_sec_usr-admin-wadar_e6ebfcb513691e22e22e71ef387976b7e11dbb46abfd1276": {
+      "user": {
+        "id": "usr-admin-wadar",
+        "name": "Azzeddine Wadar",
+        "email": "wadarazzeddine30@gmail.com",
+        "phone": "+212 661 00 00 01",
+        "role": "super_admin",
+        "companyName": "FARIOUSY DELIVERY SARL",
+        "city": "Laâyoune",
+        "address": "Siège Social - Laâyoune / Casablanca",
+        "status": "active",
+        "accountStatus": "approuve",
+        "registeredAt": "2025-01-01T00:00:00.000Z"
+      },
+      "expiresAt": 1797454713816,
+      "createdAt": "2026-11-16T20:58:33.817Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    "far_sec_usr-admin-wadar_1c404ea35d9f6eaad11b5ca7f2eee1bf728121a2d482992a": {
+      "user": {
+        "id": "usr-admin-wadar",
+        "name": "Azzeddine Wadar",
+        "email": "wadarazzeddine30@gmail.com",
+        "phone": "+212 661 00 00 01",
+        "role": "super_admin",
+        "companyName": "FARIOUSY DELIVERY SARL",
+        "city": "Laâyoune",
+        "address": "Siège Social - Laâyoune / Casablanca",
+        "status": "active",
+        "accountStatus": "approuve",
+        "registeredAt": "2025-01-01T00:00:00.000Z"
+      },
+      "expiresAt": 1797454723261,
+      "createdAt": "2026-11-16T20:58:43.261Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    "far_sec_usr-admin-wadar_3367af3376c4fe46624a24bca22c533e7aa5d6609b5d8837": {
+      "user": {
+        "id": "usr-admin-wadar",
+        "name": "Azzeddine Wadar",
+        "email": "wadarazzeddine30@gmail.com",
+        "phone": "+212 661 00 00 01",
+        "role": "super_admin",
+        "companyName": "FARIOUSY DELIVERY SARL",
+        "city": "Laâyoune",
+        "address": "Siège Social - Laâyoune / Casablanca",
+        "status": "active",
+        "accountStatus": "approuve",
+        "registeredAt": "2025-01-01T00:00:00.000Z"
+      },
+      "expiresAt": 1797454740937,
+      "createdAt": "2026-11-16T20:59:00.937Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    "far_sec_usr-admin-wadar_9559ddf2a13d878e18e60799f74671dfe052310993cb4b2e": {
+      "user": {
+        "id": "usr-admin-wadar",
+        "name": "Azzeddine Wadar",
+        "email": "wadarazzeddine30@gmail.com",
+        "phone": "+212 661 00 00 01",
+        "role": "super_admin",
+        "companyName": "FARIOUSY DELIVERY SARL",
+        "city": "Laâyoune",
+        "address": "Siège Social - Laâyoune / Casablanca",
+        "status": "active",
+        "accountStatus": "approuve",
+        "registeredAt": "2025-01-01T00:00:00.000Z"
+      },
+      "expiresAt": 1797454809568,
+      "createdAt": "2026-11-16T21:00:09.568Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    "far_sec_usr-admin-wadar_5f260393eb1f251eb94ec0d8379612f55090ddf60529e705": {
+      "user": {
+        "id": "usr-admin-wadar",
+        "name": "Azzeddine Wadar",
+        "email": "wadarazzeddine30@gmail.com",
+        "phone": "+212 661 00 00 01",
+        "role": "super_admin",
+        "companyName": "FARIOUSY DELIVERY SARL",
+        "city": "Laâyoune",
+        "address": "Siège Social - Laâyoune / Casablanca",
+        "status": "active",
+        "accountStatus": "approuve",
+        "registeredAt": "2025-01-01T00:00:00.000Z"
+      },
+      "expiresAt": 1797454856917,
+      "createdAt": "2026-11-16T21:00:56.917Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    "far_sec_usr-admin-wadar_b75c6344f79936c093c4b5cff039560b1577ddd61b175879": {
+      "user": {
+        "id": "usr-admin-wadar",
+        "name": "Azzeddine Wadar",
+        "email": "wadarazzeddine30@gmail.com",
+        "phone": "+212 661 00 00 01",
+        "role": "super_admin",
+        "companyName": "FARIOUSY DELIVERY SARL",
+        "city": "Laâyoune",
+        "address": "Siège Social - Laâyoune / Casablanca",
+        "status": "active",
+        "accountStatus": "approuve",
+        "registeredAt": "2025-01-01T00:00:00.000Z"
+      },
+      "expiresAt": 1797455012578,
+      "createdAt": "2026-11-16T21:03:32.578Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    "far_sec_usr-admin-wadar_37a3ea8b7afdda01340df67ddaac6a73b6df4f6ac6823d04": {
+      "user": {
+        "id": "usr-admin-wadar",
+        "name": "Azzeddine Wadar",
+        "email": "wadarazzeddine30@gmail.com",
+        "phone": "+212 661 00 00 01",
+        "role": "super_admin",
+        "companyName": "FARIOUSY DELIVERY SARL",
+        "city": "Laâyoune",
+        "address": "Siège Social - Laâyoune / Casablanca",
+        "status": "active",
+        "accountStatus": "approuve",
+        "registeredAt": "2025-01-01T00:00:00.000Z"
+      },
+      "expiresAt": 1797455033707,
+      "createdAt": "2026-11-16T21:03:53.707Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    "far_sec_7b90506e-0714-41bb-8186-8d6d4d6a31f8_ba784f798e63ea052606f67914763d377157bb2e9c325e43": {
+      "user": {
+        "id": "7b90506e-0714-41bb-8186-8d6d4d6a31f8",
+        "email": "wadarazzeddine30@gmail.com",
+        "name": "Administrateur Fariousy",
+        "role": "super_admin",
+        "phone": "",
+        "city": "Laâyoune",
+        "address": "",
+        "status": "actif",
+        "accountStatus": "actif",
+        "registeredAt": "2026-10-31T21:56:43.408418+00:00"
+      },
+      "expiresAt": 1797460353861,
+      "createdAt": "2026-11-16T22:32:33.861Z",
+      "ip": "169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Mobile Safari/537.36"
+    },
+    "far_sec_7b90506e-0714-41bb-8186-8d6d4d6a31f8_ed41e0a8d945af8d820d792e43063fd2e50ea35b3fc85055": {
+      "user": {
+        "id": "7b90506e-0714-41bb-8186-8d6d4d6a31f8",
+        "email": "wadarazzeddine30@gmail.com",
+        "name": "Administrateur Fariousy",
+        "role": "super_admin",
+        "phone": "",
+        "city": "Laâyoune",
+        "address": "",
+        "status": "actif",
+        "accountStatus": "actif",
+        "registeredAt": "2026-10-31T21:56:43.408418+00:00"
+      },
+      "expiresAt": 1797460353936,
+      "createdAt": "2026-11-16T22:32:33.936Z",
+      "ip": "169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Mobile Safari/537.36"
+    },
+    "far_sec_7b90506e-0714-41bb-8186-8d6d4d6a31f8_21275ab9f7c1ba9c61ce98f3cf23b521962ebe5cf69d4b09": {
+      "user": {
+        "id": "7b90506e-0714-41bb-8186-8d6d4d6a31f8",
+        "email": "wadarazzeddine30@gmail.com",
+        "name": "Administrateur Fariousy",
+        "role": "super_admin",
+        "phone": "",
+        "city": "Laâyoune",
+        "address": "",
+        "status": "actif",
+        "accountStatus": "actif",
+        "registeredAt": "2026-10-31T21:56:43.408418+00:00"
+      },
+      "expiresAt": 1798028488381,
+      "createdAt": "2026-11-23T12:21:28.381Z",
+      "ip": "169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Mobile Safari/537.36"
+    }
+  },
+  "companySettings": {
+    "companyName": "FARIOUSY  FAST DELIVERY SARL",
+    "brandTagline": "Fast Delivery — Réseau Logistique National",
+    "phone": "+212 53 53 39 36",
+    "whatsapp": "+212 604 06 06 47",
+    "email": "stefariousy@gmail.com",
+    "website": "https://app.fariousy.com",
+    "facebookUrl": "https://www.facebook.com/share/1CtkWNXorU/",
+    "instagramUrl": "https://www.instagram.com/fariousy1?exln=MTdma2tqZm51c2w4dg==",
+    "address": "Laâyoune / lotissement al aouda Maroc",
+    "rc": "543210 laâyoune",
+    "patente": "34125890",
+    "ifNumber": "40219876",
+    "ice": "002349182000045",
+    "defaultReturnFee": 15,
+    "defaultDeliveryFee": 35,
+    "deliveryDelayHours": 24,
+    "defaultDeliveryDelay": "24h - 48h",
+    "autoSmsNotice": true,
+    "autoWhatsappNotice": true,
+    "enableSmsNotifications": true,
+    "enableWhatsappAlerts": true,
+    "whatsappWebhookUrl": "",
+    "whatsappApiToken": "",
+    "whatsappNotifyStatuses": [
+      "en_cours_livraison",
+      "livre",
+      "retourne",
+      "probleme_livraison",
+      "ramasse",
+      "reporte"
+    ],
+    "whatsappCustomTemplate": "📦 {{company}} : Bonjour {{recipient}}, votre colis {{tracking}} ({{city}}) est désormais : {{status}}. Montant COD: {{cod}} MAD."
+  },
+  "deletedPackageIds": [
+    "58EB8558-6FE6-4349-A176-6652EADB0E63",
+    "FAR-341861",
+    "3F6F0EDA-331A-4856-9C9C-6AAC371E2CE0",
+    "FAR-740299",
+    "8C238ACF-016F-4DBB-8B65-2EF3C6586EF3",
+    "FAR-191157"
+  ]
+}

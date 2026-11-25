@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <script>
+      // Cleanly handle and suppress benign Vite HMR WebSocket errors in AI Studio iframe proxy
+      (function() {
+        var isWsError = function(msg) {
+          if (!msg) return false;
+          var str = typeof msg === 'string' ? msg : (msg.message || msg.reason || String(msg));
+          return str.indexOf('WebSocket') !== -1 || str.indexOf('closed without opened') !== -1 || str.indexOf('@vite/client') !== -1;
+        };
+
+        window.addEventListener('error', function(event) {
+          if (isWsError(event && (event.message || (event.error && event.error.message)))) {
+            if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+            if (event.preventDefault) event.preventDefault();
+            return true;
+          }
+        }, true);
+
+        window.addEventListener('unhandledrejection', function(event) {
+          if (isWsError(event && (event.reason || (event.reason && event.reason.message)))) {
+            if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+            if (event.preventDefault) event.preventDefault();
+          }
+        }, true);
+
+        // Filter console.error and console.warn from triggering AIS error detection for Vite WebSocket
+        var origConsoleError = console.error;
+        console.error = function() {
+          var args = Array.prototype.slice.call(arguments);
+          var joined = args.map(function(a) { return String(a && a.message ? a.message : a); }).join(' ');
+          if (isWsError(joined)) {
+            return;
+          }
+          return origConsoleError.apply(console, arguments);
+        };
+
+        var origConsoleWarn = console.warn;
+        console.warn = function() {
+          var args = Array.prototype.slice.call(arguments);
+          var joined = args.map(function(a) { return String(a && a.message ? a.message : a); }).join(' ');
+          if (isWsError(joined)) {
+            return;
+          }
+          return origConsoleWarn.apply(console, arguments);
+        };
+
+        // Proxy WebSocket constructor: for Vite HMR connections, return a stub socket that never fails or throws
+        if (typeof window.WebSocket !== 'undefined') {
+          var OrigWebSocket = window.WebSocket;
+
+          function FakeViteSocket(url, protocols) {
+            this.url = url;
+            this.protocols = protocols;
+            this.readyState = 1; // WebSocket.OPEN
+            this.bufferedAmount = 0;
+            this.extensions = '';
+            this.protocol = typeof protocols === 'string' ? protocols : '';
+            this.binaryType = 'blob';
+            this.listeners = {};
+            this.onopen = null;
+            this.onclose = null;
+            this.onerror = null;
+            this.onmessage = null;
+
+            var self = this;
+            setTimeout(function() {
+              self.readyState = 1;
+              var openEvent = new Event('open');
+              if (typeof self.onopen === 'function') {
+                try { self.onopen(openEvent); } catch (e) {}
+              }
+              var list = self.listeners['open'] || [];
+              for (var i = 0; i < list.length; i++) {
+                try { list[i].call(self, openEvent); } catch (e) {}
+              }
+            }, 10);
+          }
+
+          FakeViteSocket.prototype.addEventListener = function(type, listener) {
+            if (!this.listeners[type]) this.listeners[type] = [];
+            this.listeners[type].push(listener);
+          };
+
+          FakeViteSocket.prototype.removeEventListener = function(type, listener) {
+            if (!this.listeners[type]) return;
+            this.listeners[type] = this.listeners[type].filter(function(l) { return l !== listener; });
+          };
+
+          FakeViteSocket.prototype.dispatchEvent = function(event) {
+            var type = event ? event.type : '';
+            var list = this.listeners[type] || [];
+            for (var i = 0; i < list.length; i++) {
+              try { list[i].call(this, event); } catch (e) {}
+            }
+            return true;
+          };
+
+          FakeViteSocket.prototype.send = function() {};
+          FakeViteSocket.prototype.close = function() {
+            this.readyState = 3;
+            var closeEvt = new CloseEvent('close', { wasClean: true, code: 1000 });
+            if (typeof this.onclose === 'function') {
+              try { this.onclose(closeEvt); } catch (e) {}
+            }
+            var list = this.listeners['close'] || [];
+            for (var i = 0; i < list.length; i++) {
+              try { list[i].call(this, closeEvt); } catch (e) {}
+            }
+          };
+
+          window.WebSocket = function(url, protocols) {
+            var urlStr = String(url || '');
+            var isViteHmr = (protocols === 'vite-hmr') ||
+              (Array.isArray(protocols) && protocols.indexOf('vite-hmr') !== -1) ||
+              urlStr.indexOf('vite-hmr') !== -1 ||
+              urlStr.indexOf('@vite') !== -1;
+
+            if (isViteHmr) {
+              return new FakeViteSocket(url, protocols);
+            }
+
+            try {
+              return new OrigWebSocket(url, protocols);
+            } catch (e) {
+              return new FakeViteSocket(url, protocols);
+            }
+          };
+
+          window.WebSocket.prototype = OrigWebSocket.prototype;
+          window.WebSocket.CONNECTING = 0;
+          window.WebSocket.OPEN = 1;
+          window.WebSocket.CLOSING = 2;
+          window.WebSocket.CLOSED = 3;
+        }
+      })();
+    </script>
+    <title>FARIOUSY DELIVERY — Gestion Professionnelle de Livraison</title>
+    <meta name="description" content="Solution complète de gestion logistique, suivi de colis, ramassage et encaissements pour e-commerçants et transporteurs." />
+    <meta property="og:title" content="FARIOUSY DELIVERY — Fast Delivery" />
+    <meta property="og:description" content="Plateforme de gestion de livraison de colis, suivi en temps réel et gestion financière." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#DC2626" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Fariousy Livreur" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/png" href="/pwa-192x192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-red-500 selection:text-white">
+    <div id="root"></div>
+    <script>
+      (function () {
+        // Purge any legacy Service Worker & Workbox caches on both Vercel web and Capacitor Android APK
+        if ('serviceWorker' in navigator) {
+          var hadController = Boolean(navigator.serviceWorker.controller);
+          navigator.serviceWorker.getRegistrations().then(function (regs) {
+            if (!regs || regs.length === 0) return;
+            return Promise.all(regs.map(function (r) { return r.unregister(); })).then(function () {
+              if ('caches' in window) {
+                return caches.keys().then(function (keys) {
+                  return Promise.all(keys.map(function (k) { return caches.delete(k); }));
+                });
+              }
+            }).then(function () {
+              if (hadController) {
+                try {
+                  if (!sessionStorage.getItem('fariousy_sw_purged_once')) {
+                    sessionStorage.setItem('fariousy_sw_purged_once', '1');
+                    location.reload();
+                  }
+                } catch (e) {}
+              }
+            });
+          }).catch(function () {});
+        }
+
+        function showRecoveryPanel(title, detail) {
+          if (document.getElementById('fariousy-fatal-recovery')) return;
+          var wrap = document.createElement('div');
+          wrap.id = 'fariousy-fatal-recovery';
+          wrap.setAttribute('dir', 'rtl');
+          wrap.style.cssText = 'position:fixed;inset:0;z-index:999999;background:#f1f5f9;display:flex;align-items:center;justify-content:center;padding:20px;font-family:system-ui,-apple-system,sans-serif;';
+          var card = document.createElement('div');
+          card.style.cssText = 'max-width:420px;width:100%;background:#fff;border:1px solid #fecdd3;border-radius:18px;padding:24px;text-align:center;box-shadow:0 10px 30px rgba(15,23,42,.12);';
+          var icon = document.createElement('div');
+          icon.style.cssText = 'font-size:28px;margin-bottom:8px;';
+          icon.textContent = '⚠️';
+          var h2 = document.createElement('h2');
+          h2.style.cssText = 'margin:0 0 8px;font-size:17px;font-weight:800;color:#0f172a;';
+          h2.textContent = String(title || 'تعذر تحميل التطبيق');
+          var p = document.createElement('p');
+          p.style.cssText = 'margin:0 0 12px;font-size:13px;color:#475569;line-height:1.6;';
+          p.textContent = 'وقع مشكل مؤقت فالتشغيل. ضغط على الزر لتنظيف الكاش وإعادة فتح التطبيق.';
+          card.appendChild(icon);
+          card.appendChild(h2);
+          card.appendChild(p);
+          if (detail) {
+            var code = document.createElement('div');
+            code.setAttribute('dir', 'ltr');
+            code.style.cssText = 'margin:0 0 14px;padding:8px 10px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;font-size:11px;font-family:monospace;color:#64748b;word-break:break-word;';
+            code.textContent = String(detail).slice(0, 260);
+            card.appendChild(code);
+          }
+          var btn = document.createElement('button');
+          btn.id = 'fariousy-hard-reset-btn';
+          btn.type = 'button';
+          btn.style.cssText = 'background:#dc2626;color:#fff;border:none;border-radius:12px;padding:12px 18px;font-size:13px;font-weight:800;cursor:pointer;width:100%;';
+          btn.textContent = 'تنظيف الكاش وإعادة التشغيل';
+          card.appendChild(btn);
+          wrap.appendChild(card);
+          document.body.appendChild(wrap);
+          if (btn) {
+            btn.onclick = function () {
+              var cleanup = Promise.resolve();
+              if ('serviceWorker' in navigator) {
+                cleanup = cleanup.then(function () {
+                  return navigator.serviceWorker.getRegistrations().then(function (regs) {
+                    return Promise.all(regs.map(function (r) { return r.unregister(); }));
+                  });
+                }).catch(function () {});
+              }
+              if ('caches' in window) {
+                cleanup = cleanup.then(function () {
+                  return caches.keys().then(function (keys) {
+                    return Promise.all(keys.map(function (k) { return caches.delete(k); }));
+                  });
+                }).catch(function () {});
+              }
+              try {
+                ['fariousy_audit_logs_v1', 'fariousy_notifications_v1', 'fariousy_partner_logs_v1', 'fariousy_problem_reports_v1'].forEach(function (k) {
+                  localStorage.removeItem(k);
+                });
+              } catch (e) {}
+              cleanup.finally(function () { location.reload(); });
+            };
+          }
+        }
+
+        window.__LAST_JS_ERROR__ = '';
+        window.addEventListener('error', function (ev) {
+          var msg = (ev && (ev.message || (ev.error && ev.error.message))) || '';
+          if (msg && msg.indexOf('WebSocket') === -1) {
+            window.__LAST_JS_ERROR__ = msg;
+            var root = document.getElementById('root');
+            if (!window.__FARIOUSY_BOOTED__ || !root || root.children.length === 0) {
+              showRecoveryPanel('تعذر تحميل التطبيق', msg);
+            }
+          }
+        });
+
+        window.addEventListener('unhandledrejection', function (ev) {
+          var reason = ev && ev.reason;
+          var msg = typeof reason === 'string' ? reason : (reason && reason.message) || '';
+          if (msg && msg.indexOf('WebSocket') === -1) {
+            window.__LAST_JS_ERROR__ = msg;
+          }
+        });
+
+        // Boot timeout check
+        setTimeout(function () {
+          var root = document.getElementById('root');
+          if (!window.__FARIOUSY_BOOTED__ && (!root || !root.children || root.children.length === 0)) {
+            showRecoveryPanel('الشاشة لم تفتح بشكل طبيعي', window.__LAST_JS_ERROR__ || 'App boot timeout');
+          }
+        }, 9000);
+
+        // Continuous post-boot blank-screen guard: if #root ever becomes empty while working, show recovery UI immediately
+        setInterval(function () {
+          if (!window.__FARIOUSY_BOOTED__) return;
+          var root = document.getElementById('root');
+          if (root && root.children.length === 0) {
+            showRecoveryPanel('توقفت الصفحة فجأة', window.__LAST_JS_ERROR__ || 'Empty root detected');
+          }
+        }, 2500);
+      })();
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
